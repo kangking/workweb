@@ -21,7 +21,7 @@ nav {
 	background:url(../images/nav_bg.jpg) repeat-x; 
 }
 .navbar {
-	width: 980px;
+	width: 990px;
 	margin: 0 auto;
 }
 .navbar ul {
@@ -42,7 +42,7 @@ nav {
 	color: #eee;
 }
 .dateinfo {
-	width: 980px;
+	width: 990px;
 	margin: -10px auto;
 	padding: 0;
 	font-size: 14px;
@@ -54,51 +54,96 @@ nav {
 }
 /*主体样式*/
 .main {
-	width: 980px;
+	width: 990px;
 	margin: 0 auto;
 }
+
 .first-row {
-	width: 980px;
-	height: 300px;
+	width: 990px;
+	height: 310px;
 	margin: 0 auto;
 }
 .first-left {
 	width: 748px;
 	background-color: #fff;
 	border:1px solid #ccc;
-	padding: 5px;
+	padding: 10px;
+	float: left;
 }
 .tupianlunbo {
 	margin-right: 10px;
+	float: left;
 }
 .tupianlunbo img {
-	margin-top: 5px;
 	width: 290px;
 	height: 290px;
 }
 .toutiao {
-	width: 440px;
-	font-size: 18px;
+	width: 420px;
+	float: right;
+	margin-top: -10px;
+}
+.toutiao-title {
+	font-size: 12px;
+	color: #888;
+	border-bottom: 1px dotted #aaa;
+}
+.toutiao-title h4 {
+	display: inline-block;
+}
+.toutiao-title h4 a:link {
+	text-decoration: none;
 	color: #1f86cd;
 	font-weight: bolder;
 }
-.toutiao span {
-	display: block;
-	height: 30px;
-	line-height: 30px;
+.toutiao-news {
+	width: 420px;
+	margin-top: 10px;
+}
+.toutiao-news ul li {
+	list-style-type: none;
+	height:25px; 
+	line-height:25px;
+}
+.toutiao-news a {
+	float: left;
+	color: #000;
+}
+.toutiao-news a:hover {
+	text-decoration: none;
+	color: #f16913;
+}
+.toutiao-news span {
+	display: inline-block;
+	float: right;
 }
 .userlogin {
 	width: 230px;
-	height: 300px;
-	float: left;
+	height: 316px;
+	float: right;
 	background-color: #fff6ea;
 	border:1px solid #ffd8b3;
+}
+.login-title {
+	height: 35px;
+	line-height: 30px;
+	font-size: 16px;
+	padding: 5px;
+	font-weight: bold;
+	background-color: orange;
+	color: #fff;
+}
+.login-title a {
+	display: inline-block;
+	float: right;
+	font-size: 14px;
+	font-weight: normal;
 }
 .xuexistep {
 	margin-top: 5px;
 }
 .xuexistep img {
-	width: 980px;
+	width: 990px;
 }
 
 /*底部样式*/
@@ -113,7 +158,7 @@ footer {
 	background-color: #ef7300;
 }
 .foot-nav ul {
-	width: 980px;
+	width: 990px;
 	height: 50px;
 	line-height: 50px;
 	text-align: center;
