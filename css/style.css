@@ -64,7 +64,7 @@ nav {
 	margin: 0 auto;
 }
 .first-left {
-	width: 748px;
+	width: 728px;
 	background-color: #fff;
 	border:1px solid #ccc;
 	padding: 10px;
@@ -79,7 +79,7 @@ nav {
 	height: 290px;
 }
 .toutiao {
-	width: 420px;
+	width: 400px;
 	float: right;
 	margin-top: -10px;
 }
@@ -97,7 +97,7 @@ nav {
 	font-weight: bolder;
 }
 .toutiao-news {
-	width: 420px;
+	width: 400px;
 	margin-top: 10px;
 }
 .toutiao-news ul li {
@@ -118,18 +118,21 @@ nav {
 	float: right;
 }
 .userlogin {
-	width: 230px;
+	width: 250px;
 	height: 316px;
 	float: right;
 	background-color: #fff6ea;
 	border:1px solid #ffd8b3;
+	text-align: center;
 }
 .login-title {
 	height: 35px;
 	line-height: 30px;
 	font-size: 16px;
 	padding: 5px;
+	margin-bottom: 10px;
 	font-weight: bold;
+	text-align: left;
 	background-color: orange;
 	color: #fff;
 }
@@ -138,6 +141,9 @@ nav {
 	float: right;
 	font-size: 14px;
 	font-weight: normal;
+}
+.login-body {
+	margin-top: 20px;
 }
 .xuexistep {
 	margin-top: 5px;
