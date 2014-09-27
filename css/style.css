@@ -237,7 +237,6 @@ nav {
 .third-news a {
 	text-decoration: none;
 	color: #333;
-	font-size: 14px;
 }
 .third-news a:hover{ text-decoration: none; color: #f16913; }
 .third-right {
@@ -286,6 +285,7 @@ nav {
 	display: inline-block;
 	float: right;
 }
+/*第四行样式*/
 .fourth-row {
 	width: 990px;
 	height: 270px;
@@ -307,10 +307,113 @@ nav {
 	margin-left: 10px;
 	margin-right: 8px;
 }
+.gongxu {
+	padding: 10px;
+}
+.gongxu1 {
+	margin: 10px;
+	border: 1px solid #64A21B;
+	color: #64A21B;
+	padding-left: 15px;
+}
+.gongxu2 {
+	margin: 10px;
+	border: 1px solid  #f17c08;
+	color:  #f17c08;
+	padding-left: 15px;
+}
+.gongxu dd {
+	height: 20px;
+	line-height: 20px;
+	padding-left: 10px;
+}
 .fourth-right {
 	width: 250px;
 	float: right;
 }
+.wentidayi li {
+	list-style: none;
+	margin-left: 10px;
+	margin-right: 10px;
+	height: 25px;
+	line-height: 25px;
+}
+.fontlink a {
+	text-decoration: none;
+	color: #333;
+}
+.fontlink a:hover {
+	text-decoration: none;
+	color: #f16913;
+}
+/*第五行样式*/
+.fifth-row {
+	width: 990px;
+	height: 240px;
+	margin: 5px auto;
+}
+.fifth-left {
+	width: 730px;
+	height: 240px;
+}
+.tabqiehuan {
+	width: 730px;
+	height: 240px;
+}
+.tab-head {
+	width: 730px;
+	height: 42px;
+}
+.tab-title {
+	display: inline-block;
+	width: 150px;
+	height: 42px;
+	float: left;
+	line-height: 42px;
+	background-color: #e15700;
+	color: #fff;
+	padding-left: 30px;
+	font-size: 16px;
+}
+.tab-nav {
+	width: 580px;
+	height: 42px;
+	float: left;
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+	background-color: #f16913;
+}
+.tab-nav li {
+	display: inline-block;
+	width: 80px;
+	height: 30px;
+	margin-top: 12px;
+	margin-left: 5px;
+	padding-top: 5px;
+	text-align: center;
+	background-color: #fff;
+}
+.more-right {
+	display: inline-block;
+	width: 80px;
+	height: 42px;
+	font-size: 14px;
+	line-height: 42px;
+	float: right;
+	margin-right: -20px;
+}
+.fifth-right {
+	width: 250px;
+	float: right;
+	border: 1px solid #ccc;
+}
+.haohuashizi img {
+	width: 80px;
+	height: 90px;
+}
+
+/*第六行样式*/
 .sixth-row {
 	width: 990px;
 	margin: 5px auto; 
