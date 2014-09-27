@@ -148,8 +148,9 @@ nav {
 }
 /*第二行样式--学习流程版块*/
 .second-row {
+	width: 990px;
 	float: left;
-	margin-top: 10px;
+	margin: 10px auto;
 }
 .second-row img {
 	width: 990px;
@@ -157,7 +158,7 @@ nav {
 /*第三行样式*/
 .third-row {
 	width: 990px;
-	height: 274px;
+	height: 270px;
 	float: left;
 	margin: 10px auto;
 }
@@ -288,10 +289,11 @@ nav {
 /*第四行样式*/
 .fourth-row {
 	width: 990px;
-	height: 270px;
-	margin: 0 auto;
+	height: 260px;
+	margin: 5px auto;
+	float: left;
 }
-.fourth-left, .fourth-midle, .fourth-right {
+.fourth-midle, .fourth-right {
 	height: 260px;
 	background-color: #fff;
 	border: 1px solid #ccc;
@@ -301,6 +303,8 @@ nav {
 }
 .fourth-left {
 	width: 240px;
+	height: 260px;
+	background-color: #fff;
 }
 .fourth-midle {
 	width: 480px;
@@ -349,16 +353,21 @@ nav {
 /*第五行样式*/
 .fifth-row {
 	width: 990px;
-	height: 240px;
-	margin: 5px auto;
+	height: 242px;
+	margin: 10px auto;
+	float: left;
 }
 .fifth-left {
 	width: 730px;
 	height: 240px;
+	float: left;
+	background-color: #fff;
 }
 .tabqiehuan {
 	width: 730px;
 	height: 240px;
+	border: 1px solid #ccc;
+	background-color: #fff;
 }
 .tab-head {
 	width: 730px;
@@ -376,7 +385,7 @@ nav {
 	font-size: 16px;
 }
 .tab-nav {
-	width: 580px;
+	width: 578px;
 	height: 42px;
 	float: left;
 	padding: 0;
@@ -392,36 +401,85 @@ nav {
 	margin-left: 5px;
 	padding-top: 5px;
 	text-align: center;
-	background-color: #fff;
+}
+.tab-nav li a {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	color: #fff;
+}
+.bianse:hover {
+	text-decoration: none;
+	color: #f16913;
 }
 .more-right {
 	display: inline-block;
-	width: 80px;
+	width: 70px;
 	height: 42px;
+	text-align: center;
 	font-size: 14px;
 	line-height: 42px;
 	float: right;
-	margin-right: -20px;
 }
+
 .fifth-right {
 	width: 250px;
+	height: 240px;
 	float: right;
 	border: 1px solid #ccc;
 }
-.haohuashizi img {
-	width: 80px;
+.haohuashizi li {
+	display: inline-block;
+	width: 228px;
 	height: 90px;
+	float: left;
+	margin-bottom: 3px;
+	margin-left: 10px;
+	margin-right: 10px;
 }
-
+.haohuashizi img {
+	width: 76px;
+	height: 85px;
+	float: left;
+	margin-right: 10px;
+}
+.haohuashizi li span {
+	display: inline-block;
+	width: 140px;
+	float: left;
+	font-size: 12px;
+	color: #888;
+}
 /*第六行样式*/
 .sixth-row {
 	width: 990px;
-	margin: 5px auto; 
+	margin: 5px auto;
+	float: left; 
+}
+/*第七行样式*/
+.seventh-row {
+	width: 990px;
+	margin: 10px auto;
+	float: left;
+	border: 1px solid #ccc;
+	background-color: #fff;
+}
+.yqlj {
+	padding-left: 10px;
+	padding-bottom: 10px;
+}
+.yqlj span {
+	display: inline-block;
+	height: 20px;
+	line-height: 20px;
+	margin-left: 5px;
+	margin-right: 5px;
 }
 
 /*底部样式*/
 footer {
 	width: 100%;
+	float: left;
 	margin-top: 5px;
 	margin-bottom: 5px;
 }
