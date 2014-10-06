@@ -39,7 +39,11 @@ nav {
 	display: inline-block;
 	width: 100%;
 	text-decoration: none;
-	color: #eee;
+	color: #fff;
+}
+.xuanzhong {
+	background-color: #fff;
+	color: #f16913;
 }
 .dateinfo {
 	width: 990px;
