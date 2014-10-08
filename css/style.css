@@ -152,6 +152,9 @@ nav {
 .login-body {
 	margin-top: 30px;
 }
+.login-body button {
+	width: 80px;
+}
 /*第二行样式--学习流程版块*/
 .second-row {
 	width: 990px;
@@ -537,7 +540,7 @@ footer {
 
 /*豪华师资样式*/
 .haohua-main {
-	width: 980px;
+	width: 990px;
 	margin: 0 auto;
 }
 .sidebar {
@@ -548,4 +551,77 @@ footer {
 	float: left;
 	margin-top: 10px;
 	width: 250px;
+}
+.info-main {
+	width: 730px;
+	float: left;
+	margin-top: 10px;
+	margin-left: 10px;
+	border: 1px solid #ccc;
+	background-color: #fff;
+}
+.info-title {
+	height: 35px;
+	line-height: 35px;
+	background-color: #f16913;
+	font-size: 16px;
+	font-weight: bold;
+	padding-left: 10px;
+	color: #fff;
+}
+.info-title img {
+	margin-right: 10px;
+	width: 22px;
+	height: 22px;
+	margin-top: -3px;
+}
+.thumbnails li {
+	display: inline-block;
+	width: 150px;
+	margin-left: 22px;
+	margin-top: 10px;
+}
+
+/*用户注册样式*/
+.shudi {
+	width: 650px;
+	margin: 20px auto;
+	border: 1px dotted #ccc;
+}
+.shudi1 {
+	padding: 10px;
+	text-align: center;
+	border-bottom: 1px dotted #ccc;
+}
+.shudi2 {
+	padding-left: 10px;
+	font-size: 14px; 
+}
+.zhuce-main {
+	width: 650px;
+	margin: 10px auto;
+}
+.zhuce-title {
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	font-size: 14px;
+	background-color: #eee;
+}
+.zhucetab {
+	width: 600px;
+	margin-left: 50px;
+	margin-top: 15px;
+}
+.zhucetab td {
+	height: 50px;
+	padding: 5px;
+	font-size: 12px;
+}
+.zhucetab button {
+	width: 100px;
+}
+.zhucetab span {
+	padding-left: 5px;
+	color: red;
 }

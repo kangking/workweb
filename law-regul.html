@@ -2,6 +2,7 @@
 <html lang="zh-CN">
 <head>
 	<meta charset="utf-8">
+	<link rel="shortcut icon" type="image/x-icon" href="./images/logo.png">
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
 	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap.min.css">
 	<script src="js/script.js"></script>
@@ -32,7 +33,7 @@
 						<a href="./exam-center.html">试题中心</a>
 					</li>
 					<li>
-						<a href="./consult-center.html">咨询中心</a>
+						<a href="./info-center.html">资讯中心</a>
 					</li>
 					<li>
 						<a href="./account-life.html">会计生涯</a>
@@ -84,13 +85,23 @@
 					<p>
 						<button class="btn btn-warning" type="submit">登录</button>
 						&nbsp;&nbsp;&nbsp;&nbsp;
-						<button class="btn btn-primary" type="button">注册</button>
+						<button class="btn btn-primary" type="button" onclick="javascript:window.location.href='./user-reg.html'">注册</button>
 					</p>
 					<br />
 				</form>
 				<a href="#">
 					<img src="images/sfdl.jpg" width="186" height="40" />
 				</a>
+			</div>
+			<div class="userlogin sidebar-else" style="height:150px;">
+				<div class="login-title">
+					会员信息
+				</div>
+				<p><b>XX学员，您好！</b></p><br/>
+				<p>
+					<button class="btn btn-warning">会员中心</button>&nbsp;&nbsp;&nbsp;
+					<button class="btn btn-info">退出系统</button>
+				</p>
 			</div>
 			<div class="third-left sidebar-else">
 				<div class="mokuai-title">
@@ -120,8 +131,13 @@
 				<img src="images/contact.jpg" width="100%" height="100%">
 			</div>
 		</aside>
-		<section>
-			
+		<section class="info-main">
+			<div class="info-title">
+				<img src="images/q.png">法律法规
+			</div>
+			<div class="info-body">
+				123234
+			</div>			
 		</section>
 	</section>
 

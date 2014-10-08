@@ -2,12 +2,13 @@
 <html lang="zh-CN">
 <head>
 	<meta charset="utf-8">
+	<link rel="shortcut icon" type="image/x-icon" href="./images/logo.png">
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
 	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap.min.css">
 	<script src="js/script.js"></script>
 	<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
 	<script src="http://cdn.bootcss.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-	<title>咨询中心!</title>
+	<title>用户注册!</title>
 </head>
 <body>
 	<header>
@@ -32,7 +33,7 @@
 						<a href="./exam-center.html">试题中心</a>
 					</li>
 					<li>
-						<a href="./consult-center.html">咨询中心</a>
+						<a href="./info-center.html">资讯中心</a>
 					</li>
 					<li>
 						<a href="./account-life.html">会计生涯</a>
@@ -84,13 +85,23 @@
 					<p>
 						<button class="btn btn-warning" type="submit">登录</button>
 						&nbsp;&nbsp;&nbsp;&nbsp;
-						<button class="btn btn-primary" type="button">注册</button>
+						<button class="btn btn-primary" type="button" onclick="javascript:window.location.href='./user-reg.html'" >注册</button>
 					</p>
 					<br />
 				</form>
 				<a href="#">
 					<img src="images/sfdl.jpg" width="186" height="40" />
 				</a>
+			</div>
+			<div class="userlogin sidebar-else" style="height:150px;">
+				<div class="login-title">
+					会员信息
+				</div>
+				<p><b>XX学员，您好！</b></p><br/>
+				<p>
+					<button class="btn btn-warning">会员中心</button>&nbsp;&nbsp;&nbsp;
+					<button class="btn btn-info">退出系统</button>
+				</p>
 			</div>
 			<div class="third-left sidebar-else">
 				<div class="mokuai-title">
@@ -120,8 +131,23 @@
 				<img src="images/contact.jpg" width="100%" height="100%">
 			</div>
 		</aside>
-		<section>
-			
+		<section class="info-main">
+			<div class="info-title">
+				<img src="images/q.png">用户注册
+			</div>
+			<div class="info-body">
+				<div class="shudi">
+					<p class="shudi1"> 
+						<button type="button" class="btn btn-warning" onclick="javascript:window.location.replace('http://110.249.165.44:7001/acms/portal/IndexAction.do?method=frontLink&link=acmsQuery')">会计征属地查询</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<button type="button" class="btn btn-warning" onclick="javascript:window.location.href='./user-reg2.html'">不需要查询</button>
+					</p>
+					<p class="shudi2" style="color:red;">
+						[注意事项]
+					</p>
+					<p class="shudi2">如您不确定您的会计证属地，请点击“会计证属地查询”。</p>
+					<p class="shudi2">如果您确定您的会计证属地，请点击“不需要查询”。</p>
+				</div>
+			</div>			
 		</section>
 	</section>
 
