@@ -34,4 +34,35 @@ window.onload = function(){
 			kuaijicons[this.index].style.display = "block";
 		}
 	};
+
+	var now = new Date();
+	var year = now.getFullYear();
+	var month = now.getMonth();
+	var day = now.getDate();
+	var week = now.getDay();
+	var date = document.getElementById('date');
+
+	if (week == 0) {
+		var zhou = '日';
+	};
+	if (week == 1) {
+		var zhou = '一';
+	};
+	if (week == 2) {
+		var zhou = '二';
+	};
+	if (week == 3) {
+		var zhou = '三';
+	};
+	if (week == 4) {
+		var zhou = '四';
+	};
+	if (week == 5) {
+		var zhou = '五';
+	};
+	if (week == 6) {
+		var zhou = '六';
+	};
+
+	date.innerHTML =  year + ' 年 ' + (month+1) + ' 月 ' + day + ' 日 ' + '  星期' + zhou;
 }
