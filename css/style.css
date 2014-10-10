@@ -14,8 +14,13 @@ header, footer {
 .top {
 	width:100%;
 	height:129px; 
-	background:url(../images/top.jpg) center center no-repeat #f17c08; 
-	text-align:center;
+	background:url(../images/top.jpg) center center no-repeat #f17c08;
+	padding-right: 20px;
+}
+.top iframe {
+	width: 128px;
+	height: 128px;
+	float: right;
 }
 nav { 
 	width: 100%;
@@ -624,4 +629,60 @@ footer {
 .zhucetab span {
 	padding-left: 5px;
 	color: red;
+}
+
+/*答疑中心样式*/
+.question-search {
+	width: 500px;
+	margin: 10px auto;
+	font-size: 14px;
+	padding-bottom: 10px;
+	border-bottom: 1px dotted #ccc; 
+}
+.question-search td {
+	height: 40px;
+}
+.question-list {
+	width: 500px;
+	margin: 0 auto;
+}
+.question-entry {
+	margin-top: 5px;
+	padding-bottom: 5px;
+	list-style-type: none;
+	border-bottom: 1px dotted #ccc;
+}
+.questio-entry li {
+	height: 20px;
+}
+
+/*试题中心*/
+.exam-main {
+	width: 600px;
+	margin: 20px auto;
+}
+.liststyle li {
+	list-style-type: none;
+	height: 35px;
+	line-height: 35px;
+	padding-left: 5px;
+	border-bottom: 1px dotted orange;
+}
+.liststyle li span {
+	display: inline-block;
+	float: right;
+	margin-right: 10px;
+}
+.liststyle li a {
+	text-decoration: none;
+	color: #333;
+}
+.liststyle li a:hover {
+	color: #f16913;
+}
+
+/*资讯中心样式*/
+.infomations {
+	width: 650px;
+	margin: 20px auto;
 }
