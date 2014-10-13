@@ -687,3 +687,28 @@ footer {
 	width: 650px;
 	margin: 20px auto;
 }
+
+/*文章详情样式*/
+.article-main {
+	width: 600px;
+	margin: 20px auto;
+}
+.article-title {
+	font-size: 16px;
+	text-align: center;
+	height: 38px;
+	line-height: 38px;
+}
+.title-fu {
+	height: 30px;
+	font-size: 14px;
+	color: #666;
+	line-height: 30px;
+	text-align: center;
+	border-top:1px dotted #aaa; 
+	border-bottom:1px dotted #aaa; 
+}
+.article-body {
+	width: 550px;
+	margin: 20px auto;
+}

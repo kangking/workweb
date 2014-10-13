@@ -8,12 +8,14 @@
 	<script src="js/script.js"></script>
 	<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
 	<script src="http://cdn.bootcss.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-	<title>答疑中心!</title>
+	<title>文章详情!</title>
 </head>
 <body>
 	<header>
 		<!-- 导航开始 -->
-		<div class="top"><iframe frameborder="0" src="./clock.html" scrolling="no" ></iframe></div>
+		<div class="top">
+			<iframe frameborder="0" src="./clock.html" scrolling="no" ></iframe>
+		</div>
 		<nav>
 			<div class="navbar" id="navbar">
 				<ul>
@@ -54,7 +56,10 @@
 				</div>
 			</div>
 			<div class="dateinfo">
-				<img src="./images/laba.jpg">大家好！今天是：<span id="date"></span></div>
+				<img src="./images/laba.jpg">
+				大家好！今天是：
+				<span id="date"></span>
+			</div>
 		</nav>
 	</header>
 
@@ -192,76 +197,62 @@
 		</aside>
 		<section class="info-main">
 			<div class="info-title">
-				<img src="images/q.png">答疑中心</div>
+				<img src="images/q.png">试题中心-title</div>
 			<div class="info-body">
-				<div class="question-search">
-					<form method="post" action="#">
-						<table>
-							<tr>
-								<td>留言人： </td>
-								<td><input name="liuyanren" type="text"></td>
-							</tr>
-							<tr>
-								<td>联系方式： </td>
-								<td><input name="lianxi" type="text"></td>
-							</tr>
-							<tr>
-								<td>留言标题： </td>
-								<td><input name="liuyantitle" type="text"></td>
-							</tr>
-							<tr>
-								<td>留言内容： </td>
-								<td><textarea name="liuyancont" cols="40" rows="6"></textarea></td>
-							</tr>
-							<tr>
-								<td colspan="2" style="text-align: center;">
-									<button type="submit" class="btn btn-warning">留言提交</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-									<button type="reset" class="btn btn-primary">留言清除</button>
-								</td>
-							</tr>
-						</table>
-					</form>
-				</div>
-				<div class="question-list">
-					<ul class="question-entry">
-						<li>留言标题： 【xiaowen】无法激活</li>
-						<li>留言日期： 2014/9/20 12:49:47</li>
-						<li>留言内容： 我在网上购买的卡，不是说购买成功不用激活就可以直接学习吗，为什么我的不能？</li>
-						<li>管理回复： <span style="background-color: #ccffff;">您好，请联系一下客服，让客服帮您解决</span></li>
-					</ul>
-					<ul class="question-entry">
-						<li>留言标题： 【xiaowen】无法激活</li>
-						<li>留言日期： 2014/9/20 12:49:47</li>
-						<li>留言内容： 我在网上购买的卡，不是说购买成功不用激活就可以直接学习吗，为什么我的不能？</li>
-						<li>管理回复： <span style="background-color: #ccffff;">您好，请联系一下客服，让客服帮您解决</span></li>
-					</ul>
-					<ul class="question-entry">
-						<li>留言标题： 【xiaowen】无法激活</li>
-						<li>留言日期： 2014/9/20 12:49:47</li>
-						<li>留言内容： 我在网上购买的卡，不是说购买成功不用激活就可以直接学习吗，为什么我的不能？</li>
-						<li>管理回复： <span style="background-color: #ccffff;">您好，请联系一下客服，让客服帮您解决</span></li>
-					</ul>
-					<ul class="question-entry">
-						<li>留言标题： 【xiaowen】无法激活</li>
-						<li>留言日期： 2014/9/20 12:49:47</li>
-						<li>留言内容： 我在网上购买的卡，不是说购买成功不用激活就可以直接学习吗，为什么我的不能？</li>
-						<li>管理回复： <span style="background-color: #ccffff;">您好，请联系一下客服，让客服帮您解决</span></li>
-					</ul>
-					<ul class="question-entry">
-						<li>留言标题： 【xiaowen】无法激活</li>
-						<li>留言日期： 2014/9/20 12:49:47</li>
-						<li>留言内容： 我在网上购买的卡，不是说购买成功不用激活就可以直接学习吗，为什么我的不能？</li>
-						<li>管理回复： <span style="background-color: #ccffff;">您好，请联系一下客服，让客服帮您解决</span></li>
-					</ul>
-					<ul class="pagination" style="margin-left: 95px;">
-						<li><a href="#">&laquo;上一页</a></li>
-						<li><a href="#">1</a></li>
-						<li><a href="#">2</a></li>
-						<li><a href="#">3</a></li>
-						<li><a href="#">4</a></li>
-						<li><a href="#">5</a></li>
-						<li><a href="#">下一页&raquo;</a></li>
-					</ul>
+				<div class="article-main">
+					<div class="article-title"><b>2014年初级会计职称考试《初级会计实务》考前冲刺试卷(一)</b></div>
+					<div class="title-fu">
+						添加人：
+						<label>123</label>
+						访问次数：
+						<label>45612</label>
+						日期：
+						<label id="date"></label>
+					</div>
+					<div class="article-body">
+						一、单项选择题(本类题共25小题，每小题1分，共25分。每小题备选答案中，只有一个符合题意的正确答案。请将选定的答案，按答题卡要求，用2B铅笔填涂答题卡中选1至25信息点。多选、错选、不选均不得分)<br>
+						1.下列各项，应计入营业外收入的是（　　）。<br>
+						A．销售商品取得的收入<br>
+						B．转销无法偿还的应付账款<br>
+						C．出售原材料取得的收入<br>
+						D．转让交易性金融资产取得的净收益<br>
+						2．某企业2007年11月主营业务收人为200万元，主营业务成本为150万元，管理苛只为8万元，公允价值变动收益3万元，资产减值损失为1万元，投资收益为7万元，营业外收入6万元。假定不考虑其他因素，该企业当月的营业利润为（　　）万元。<br>
+						A．42 <br>
+						B．45 <br>
+						C．51 <br>
+						D．57 <br>
+						3.下列各种产品成本计算方法，适用于大量大批多步骤生产，且需要计算半成品成本的是（　　）。<br>
+						A．品种法 <br>
+						B．分批法<br>
+						C.逐步结转分步法<br>
+						D．平行结转分步法<br>
+						4.甲企业期末“原材料”科目余额为100万元，“生产成本”科目余额为70万元，“材料成本差异”科目借方余额为5万元，“库存商品”科目余额为150万元，“委托代销商品”15万元，“工程物资”科目余额为200万元。则甲企业期末资产负债表中“存货，，项目的金额为（　　）万元。<br>
+						A．250 <br>
+						B．320<br>
+						C．340<br>
+						D．540<br>
+						5.某企业2008年度的利润总额为900万元，其中包括本年收到的国库券利息收入。万元；税法规定当期可以扣除的业务招待费标准为300万元，实际发生的业务招待费7 410万元，企业所得税税率为25%。该企业2008年应交的所得税为（　　）万元。<br>
+						A．225 <br>
+						B．250<br>
+						C．222．5<br>
+						D．275<br>
+						6.某工业企业本期营业利润为200万元，管理费用为15万元，投资收益为30万元，营业外支出5 7Y*，所得税费用为30万元。假定不考虑其他因素，该企业本期净利润为（　　）万元。<br>
+						A．160 <br>
+						B．165<br>
+						C．200<br>
+						D．210<br>
+						7．A股份有限公司委托券商代理发行股票10 000万股，每股面值１元，每股发行价
+						格1元。按发行价格的1%向券商支付发行费用。该公司资本公积(股本溢价)账户的贷方余额为60万元，盈余公积账户的贷方余额为50万元。该公司在收到股款时，应记入”资本公积”科目的金额为（　　）万元。<br>
+						A．0 <br>
+						B．50<br>
+						C．40<br>
+						D．100<br>
+						8．某企业年初未分配利润为100万元，盈余公积40万元。本年净利润为1 000万元，按10%计提法定盈余公积，按10%计提任意盈余公积，宣告发放现金股利为200万元，该企业期末留存收益的金额为（　　）万元。<br>
+						A．1 040 <br>
+						B．1 140<br>
+						C．940<br>
+						D．740<br>
+					</div>
 				</div>
 			</div>
 		</section>

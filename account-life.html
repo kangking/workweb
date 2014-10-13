@@ -59,39 +59,98 @@
 	</header>
 
 	<section class="haohua-main">
-		<aside class="sidebar">
-			<div class="userlogin sidebar-else">
+		<aside class="sidebar sidebar-else">
+			<div class="userlogin">
 				<div class="login-title">
 					会员快速登录入口
 					<a href="#">[帮助]</a>
 				</div>
 				<form action="#" method="post" class="login-body">
 					<p>
-						用户名：
-						<input type="text" name="username" style="width:150px;" />
+						<div class="input-group" style="width:180px;margin-left: 15%;">
+							<span class="input-group-addon">
+								<span class="glyphicon glyphicon-user" ></span>
+							</span>
+							<input type="text" class="form-control" name="username" placeholder="用户名"></div>
 					</p>
 					<p>
-						密&nbsp;&nbsp;&nbsp;&nbsp;码：
-						<input type="password" name="passwd" style="width:150px;" />
+						<div class="input-group" style="width:180px;margin-left: 15%;">
+							<span class="input-group-addon">
+								<span class="glyphicon glyphicon-lock" ></span>
+							</span>
+							<input type="password" class="form-control" name="passwd" placeholder="密码"></div>
 					</p>
 					<p>
-						验证码：
-						<input type="text" name="yanzhengma" style="width:90px;" />
-						&nbsp;&nbsp;&nbsp;
-						<img src="http://www.lffkyy.com/include/vdimgck.php" style="width:48px;height:24px;"></p>
+						<div class="input-group" style="width:180px;margin-left: 15%;">
+							<span class="input-group-addon">
+								<span class="glyphicon glyphicon-eye-open" ></span>
+							</span>
+							<input type="text" class="form-control" name="yangzhengma" placeholder="验证码">
+							<span class="input-group-addon">
+								<img src="http://www.lffkyy.com/include/vdimgck.php" style="width:42px;height:20px;"></span>
+						</div>
+					</p>
 					<p>
-						<a href="#">忘记密码了？？</a>
+						<a href="forget-passwd.html">忘记密码了？？</a>
 					</p>
 					<p>
 						<button class="btn btn-warning" type="submit">登录</button>
 						&nbsp;&nbsp;&nbsp;&nbsp;
 						<button class="btn btn-primary" type="button" onclick="javascript:window.location.href='./user-reg.html'">注册</button>
 					</p>
-					<br />
+
 				</form>
-				<a href="#">
-					<img src="images/sfdl.jpg" width="186" height="40" />
-				</a>
+
+				<img data-toggle="modal" src="images/sfdl.jpg" width="186" height="40" data-target="#myModal">
+			</div>
+
+			<!-- 模态框（Modal） -->
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" 
+   aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content" style="width:300px;text-align:center;">
+						<div class="modal-header">
+							<button type="button" class="close" 
+               data-dismiss="modal" aria-hidden="true">&times;</button>
+							<h4 class="modal-title" id="myModalLabel">身份证登录</h4>
+						</div>
+						<div class="modal-body">
+							<form id="form1">
+								<p>
+									<div class="input-group" style="width:210px;margin-left: 15%;">
+										<span class="input-group-addon">
+											<span class="glyphicon glyphicon-credit-card" ></span>
+										</span>
+										<input type="text" class="form-control" name="idnumber" placeholder="身份证号"></div>
+								</p>
+								<p>
+									<div class="input-group" style="width:210px;margin-left: 15%;">
+										<span class="input-group-addon">
+											<span class="glyphicon glyphicon-lock" ></span>
+										</span>
+										<input type="password" class="form-control" name="passwd" placeholder="密码"></div>
+								</p>
+								<p>
+									<div class="input-group" style="width:210px;margin-left: 15%;">
+										<span class="input-group-addon">
+											<span class="glyphicon glyphicon-eye-open" ></span>
+										</span>
+										<input type="text" class="form-control" name="yanzhengma" placeholder="验证码">
+										<span class="input-group-addon">
+											<img src="http://www.lffkyy.com/include/vdimgck.php" style="width:42px;height:20px;"></span>
+									</div>
+								</p>
+								<br/>
+								<a href="#">忘记密码了？？</a>
+							</form>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" 
+               data-dismiss="modal">关闭</button>
+							<button type="submit" class="btn btn-primary" form="form1">登录</button>
+						</div>
+					</div>
+				</div>
 			</div>
 			<div class="userlogin sidebar-else" style="height:150px;">
 				<div class="login-title">
@@ -157,7 +216,7 @@
 						</ul>
 
 						<div class="tab-content" style="margin-top: 10px;">
-							<div class="tab-pane active" id="panel-1">
+							<div class="tab-pane fade in active" id="panel-1">
 								<ul class="liststyle">
 									<li><a href="#">2014年初级会计职称考试《初级会计实务》考前冲刺试卷(一)</a><span>2012-6-29</span></li>
 									<li><a href="#">2014年初级会计职称考试《初级会计实务》考前冲刺试卷(一)</a><span>2012-6-29</span></li>
@@ -184,7 +243,7 @@
 								</ul>
 							</div>
 
-							<div class="tab-pane" id="panel-2">
+							<div class="tab-pane fade" id="panel-2">
 								<ul class="liststyle">
 									<li><a href="#">2014年初级会计职称考试《初级会计实务》考前冲刺试卷(二)</a><span>2012-6-29</span></li>
 									<li><a href="#">2014年初级会计职称考试《初级会计实务》考前冲刺试卷(二)</a><span>2012-6-29</span></li>
@@ -213,7 +272,7 @@
 								</ul>
 							</div>
 
-							<div class="tab-pane" id="panel-3">
+							<div class="tab-pane fade" id="panel-3">
 								<ul class="liststyle">
 									<li><a href="#">2014年初级会计职称考试《初级会计实务》考前冲刺试卷(三)</a><span>2012-6-29</span></li>
 									<li><a href="#">2014年初级会计职称考试《初级会计实务》考前冲刺试卷(三)</a><span>2012-6-29</span></li>
@@ -240,7 +299,7 @@
 									<li><a href="#">&raquo;</a></li>
 								</ul>
 							</div>
-							<div class="tab-pane" id="panel-4">
+							<div class="tab-pane fade" id="panel-4">
 								<ul class="liststyle">
 									<li><a href="#">2014年初级会计职称考试《初级会计实务》考前冲刺试卷(四)</a><span>2012-6-29</span></li>
 									<li><a href="#">2014年初级会计职称考试《初级会计实务》考前冲刺试卷(四)</a><span>2012-6-29</span></li>
@@ -267,7 +326,7 @@
 									<li><a href="#">&raquo;</a></li>
 								</ul>
 							</div>
-							<div class="tab-pane" id="panel-5">
+							<div class="tab-pane fade" id="panel-5">
 								<ul class="liststyle">
 									<li><a href="#">2014年初级会计职称考试《初级会计实务》考前冲刺试卷(五)</a><span>2012-6-29</span></li>
 									<li><a href="#">2014年初级会计职称考试《初级会计实务》考前冲刺试卷(五)</a><span>2012-6-29</span></li>
@@ -284,14 +343,14 @@
 									<li><a href="#">2014年初级会计职称考试《初级会计实务》考前冲刺试卷(五)</a><span>2012-6-29</span></li>
 									<li><a href="#">2014年初级会计职称考试《初级会计实务》考前冲刺试卷(五)</a><span>2012-6-29</span></li>
 								</ul>
-								<ul class="pagination" style="padding-left:150px; ">
-									<li><a href="#">&laquo;</a></li>
+								<ul class="pagination" style="margin-left:205px;">
+									<li><a href="#">&laquo;上一页</a></li>
 									<li><a href="#">1</a></li>
 									<li><a href="#">2</a></li>
 									<li><a href="#">3</a></li>
 									<li><a href="#">4</a></li>
 									<li><a href="#">5</a></li>
-									<li><a href="#">&raquo;</a></li>
+									<li><a href="#">下一页&raquo;</a></li>
 								</ul>
 							</div>
 						</div>

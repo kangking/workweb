@@ -8,12 +8,14 @@
 	<script src="js/script.js"></script>
 	<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
 	<script src="http://cdn.bootcss.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-	<title>答疑中心!</title>
+	<title>忘记密码!</title>
 </head>
 <body>
 	<header>
 		<!-- 导航开始 -->
-		<div class="top"><iframe frameborder="0" src="./clock.html" scrolling="no" ></iframe></div>
+		<div class="top">
+			<iframe frameborder="0" src="./clock.html" scrolling="no" ></iframe>
+		</div>
 		<nav>
 			<div class="navbar" id="navbar">
 				<ul>
@@ -54,7 +56,10 @@
 				</div>
 			</div>
 			<div class="dateinfo">
-				<img src="./images/laba.jpg">大家好！今天是：<span id="date"></span></div>
+				<img src="./images/laba.jpg">
+				大家好！今天是：
+				<span id="date"></span>
+			</div>
 		</nav>
 	</header>
 
@@ -192,76 +197,84 @@
 		</aside>
 		<section class="info-main">
 			<div class="info-title">
-				<img src="images/q.png">答疑中心</div>
+				<img src="images/q.png">找回密码</div>
 			<div class="info-body">
-				<div class="question-search">
-					<form method="post" action="#">
-						<table>
-							<tr>
-								<td>留言人： </td>
-								<td><input name="liuyanren" type="text"></td>
-							</tr>
-							<tr>
-								<td>联系方式： </td>
-								<td><input name="lianxi" type="text"></td>
-							</tr>
-							<tr>
-								<td>留言标题： </td>
-								<td><input name="liuyantitle" type="text"></td>
-							</tr>
-							<tr>
-								<td>留言内容： </td>
-								<td><textarea name="liuyancont" cols="40" rows="6"></textarea></td>
-							</tr>
-							<tr>
-								<td colspan="2" style="text-align: center;">
-									<button type="submit" class="btn btn-warning">留言提交</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-									<button type="reset" class="btn btn-primary">留言清除</button>
-								</td>
-							</tr>
-						</table>
-					</form>
+				<div class="panel panel-danger" style="width:600px;margin:20px auto;">
+					<div class="panel-heading">
+						<h3 class="panel-title">忘记用户名或密码了？不要着急，填写以下信息就可以轻松找回！！</h3>
+					</div>
+					<div class="panel-body">
+						<form role="form">
+							<div class="form-group">
+								<label class="control-label" for="realname">真实姓名：</label>
+								<div class="controls">
+									<input name="realname" class="form-control" placeholder="请填写注册时的真实姓名" type="text"></div>
+							</div>
+							<br>
+							<div class="form-group">
+								<label class="control-label" for="idnumber">身份证号：</label>
+								<div class="controls">
+									<input name="idnumber" class="form-control" placeholder="请填写您的身份证号" type="text"></div>
+							</div>
+							<br>
+							<div class="form-group" style="text-align: center;">
+								<div class="controls">
+									<button class="btn btn-primary" type="submit">提 交</button>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									<button class="btn" type="reset">重 置</button>
+								</div>
+							</div>
+						</form>
+					</div>
 				</div>
-				<div class="question-list">
-					<ul class="question-entry">
-						<li>留言标题： 【xiaowen】无法激活</li>
-						<li>留言日期： 2014/9/20 12:49:47</li>
-						<li>留言内容： 我在网上购买的卡，不是说购买成功不用激活就可以直接学习吗，为什么我的不能？</li>
-						<li>管理回复： <span style="background-color: #ccffff;">您好，请联系一下客服，让客服帮您解决</span></li>
-					</ul>
-					<ul class="question-entry">
-						<li>留言标题： 【xiaowen】无法激活</li>
-						<li>留言日期： 2014/9/20 12:49:47</li>
-						<li>留言内容： 我在网上购买的卡，不是说购买成功不用激活就可以直接学习吗，为什么我的不能？</li>
-						<li>管理回复： <span style="background-color: #ccffff;">您好，请联系一下客服，让客服帮您解决</span></li>
-					</ul>
-					<ul class="question-entry">
-						<li>留言标题： 【xiaowen】无法激活</li>
-						<li>留言日期： 2014/9/20 12:49:47</li>
-						<li>留言内容： 我在网上购买的卡，不是说购买成功不用激活就可以直接学习吗，为什么我的不能？</li>
-						<li>管理回复： <span style="background-color: #ccffff;">您好，请联系一下客服，让客服帮您解决</span></li>
-					</ul>
-					<ul class="question-entry">
-						<li>留言标题： 【xiaowen】无法激活</li>
-						<li>留言日期： 2014/9/20 12:49:47</li>
-						<li>留言内容： 我在网上购买的卡，不是说购买成功不用激活就可以直接学习吗，为什么我的不能？</li>
-						<li>管理回复： <span style="background-color: #ccffff;">您好，请联系一下客服，让客服帮您解决</span></li>
-					</ul>
-					<ul class="question-entry">
-						<li>留言标题： 【xiaowen】无法激活</li>
-						<li>留言日期： 2014/9/20 12:49:47</li>
-						<li>留言内容： 我在网上购买的卡，不是说购买成功不用激活就可以直接学习吗，为什么我的不能？</li>
-						<li>管理回复： <span style="background-color: #ccffff;">您好，请联系一下客服，让客服帮您解决</span></li>
-					</ul>
-					<ul class="pagination" style="margin-left: 95px;">
-						<li><a href="#">&laquo;上一页</a></li>
-						<li><a href="#">1</a></li>
-						<li><a href="#">2</a></li>
-						<li><a href="#">3</a></li>
-						<li><a href="#">4</a></li>
-						<li><a href="#">5</a></li>
-						<li><a href="#">下一页&raquo;</a></li>
-					</ul>
+				<div class="panel panel-success" style="width:600px;margin: 20px auto;">
+					<div class="panel-heading">
+						<h3 class="panel-title">找回的用户名及密码</h3>
+					</div>
+					<div class="panel-body">
+						<table class="table table-bordered table-hover" contenteditable="true">
+							<thead>
+								<tr>
+									<th>用户名</th>
+									<th>密码</th>
+									<th>真实姓名</th>
+									<th>地域</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td>TB - Monthly</td>
+									<td>01/04/2012</td>
+									<td>Default</td>
+								</tr>
+								<tr class="success">
+									<td>1</td>
+									<td>TB - Monthly</td>
+									<td>01/04/2012</td>
+									<td>Approved</td>
+								</tr>
+								<tr class="error">
+									<td>2</td>
+									<td>TB - Monthly</td>
+									<td>02/04/2012</td>
+									<td>Declined</td>
+								</tr>
+								<tr class="warning">
+									<td>3</td>
+									<td>TB - Monthly</td>
+									<td>03/04/2012</td>
+									<td>Pending</td>
+								</tr>
+								<tr class="info">
+									<td>4</td>
+									<td>TB - Monthly</td>
+									<td>04/04/2012</td>
+									<td>Call in to confirm</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
 				</div>
 			</div>
 		</section>
