@@ -1,4 +1,40 @@
 window.onload = function(){
+
+	var now = new Date();
+	var year = now.getFullYear();
+	var month = now.getMonth();
+	var day = now.getDate();
+	var week = now.getDay();
+	var date = document.getElementById('date');
+
+	switch (week)
+	{
+	case 0:
+	  var zhou="日";
+	  break;
+	case 1:
+	  var zhou="一";
+	  break;
+	case 2:
+	  var zhou="二";
+	  break;
+	case 3:
+	  var zhou="三";
+	  break;
+	case 4:
+	  var zhou="四";
+	  break;
+	case 5:
+	  var zhou="五";
+	  break;
+	case 6:
+	  var zhou="六";
+	  break;
+	}
+
+	date.innerHTML =  year + ' 年 ' + (month+1) + ' 月 ' + day + ' 日 ' + '  星期' + zhou;
+
+	
 	var navbar = document.getElementById('navbar');
 	var navbarlink = navbar.getElementsByTagName('a');
 
@@ -35,39 +71,4 @@ window.onload = function(){
 		}
 	};
 
-	var now = new Date();
-	var year = now.getFullYear();
-	var month = now.getMonth();
-	var day = now.getDate();
-	var week = now.getDay();
-	var date = document.getElementById('date');
-	var date01 = document.getElementById('date01');
-
-	switch (week)
-	{
-	case 0:
-	  var zhou="日";
-	  break;
-	case 1:
-	  var zhou="一";
-	  break;
-	case 2:
-	  var zhou="二";
-	  break;
-	case 3:
-	  var zhou="三";
-	  break;
-	case 4:
-	  var zhou="四";
-	  break;
-	case 5:
-	  var zhou="五";
-	  break;
-	case 6:
-	  var zhou="六";
-	  break;
-	}
-
-	date.innerHTML =  year + ' 年 ' + (month+1) + ' 月 ' + day + ' 日 ' + '  星期' + zhou;
-	date01.innerHTML =  year + ' 年 ' + (month+1) + ' 月 ' + day + ' 日 ' + '  星期' + zhou;
 }
