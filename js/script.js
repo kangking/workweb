@@ -1,4 +1,5 @@
 window.onload = function(){
+
 	var now = new Date();
 	var year = now.getFullYear();
 	var month = now.getMonth();
@@ -32,6 +33,7 @@ window.onload = function(){
 	}
 
 	date.innerHTML =  year + ' 年 ' + (month+1) + ' 月 ' + day + ' 日 ' + '  星期' + zhou;
+
 
 	var navbar = document.getElementById('navbar');
 	var navbarlink = navbar.getElementsByTagName('a');
