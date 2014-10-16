@@ -22,6 +22,12 @@ header, footer {
 	height: 128px;
 	float: right;
 }
+@media screen and (max-width: 1250px){
+	.top iframe {
+		float: left;
+		margin-left: 60%; 
+	}
+}
 nav { 
 	width: 100%;
 	height:90px;
@@ -136,6 +142,7 @@ nav {
 	background-color: #fff6ea;
 	border:1px solid #ffd8b3;
 	text-align: center;
+	margin-bottom: 10px;
 }
 .login-title {
 	height: 35px;
@@ -711,4 +718,36 @@ footer {
 .article-body {
 	width: 550px;
 	margin: 20px auto;
+}
+.wanggou-search {
+	width: 600px;
+	margin: 20px auto;
+	padding-bottom: 10px;
+	border-bottom: 1px dotted #ccc;
+}
+.wanggou-body {
+	width: 600px;
+	margin: 0 auto;
+}
+.membercenter {
+	width: 100%;
+	margin-top: 0;
+}
+.membercenter .glyphicon {
+	margin-right: 10px;
+}
+.membertitle {
+	font-size: 16px;
+	font-weight: bold;
+}
+.membercenter a {
+	border-color: #ffd8b3;
+}
+.member-body {
+	width: 600px;
+	margin: 20px auto;
+}
+.member-info {
+	width: 400px;
+	margin: 10px auto;
 }
