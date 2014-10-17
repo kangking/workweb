@@ -8,7 +8,7 @@
 	<script src="./js/script.js"></script>
 	<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
 	<script src="http://cdn.bootcss.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-	<title>网上购卡!</title>
+	<title>信息修改!</title>
 </head>
 <body>
 	<header>
@@ -157,7 +157,7 @@
 			</div>
 			<div class="membercenter sidebar-else">
 				<div class="list-group">
-					<a href="#" class="list-group-item active membertitle" style="background-color: #f16913; border: 0;">
+					<a class="list-group-item active membertitle" style="background-color: #f16913; border: 0;">
 					会员中心
 				    </a>
 				    <a class="list-group-item disabled"><span style="color: #f16913;">XX</span>学员，欢迎登录！！</a>
@@ -202,43 +202,42 @@
 		</aside>
 		<section class="info-main">
 			<div class="info-title">
-				<img src="images/q.png">网上购卡
+				<img src="images/q.png">信息修改
 			</div>
 			<div class="info-body">
-			<div class="panel panel-success member-body">
-					<div class="panel-heading" style="background-color:orange;font-size: 16px;">会员信息修改</div>
-					<form>
-						<table class="table table-bordered">
+			<div class="panel panel-danger member-body">
+					<div class="panel-heading" style="font-size: 16px;">会员信息修改</div>
+						<table class="table table-bordered table-first-center" from="info-edit">
 							<tr class="error">
-								<td style="text-align: right;">用户名：</td>
+								<td>用户名：</td>
 								<td><label name="username">xiaoqiang</label></td>
 							</tr>
 							<tr class="warning">
-								<td style="text-align: right;">真实姓名：</td>
+								<td>真实姓名：</td>
 								<td><input type="text" name="realname" placeholder="牛小强"></td>
 							</tr>
 							<tr class="error">
-								<td style="text-align: right;">身份证号：</td>
+								<td>身份证号：</td>
 								<td><label name="idnumber">13013119977446564</label></td>
 							</tr>
 							<tr class="warning">
-								<td style="text-align: right;">工作单位：</td>
+								<td>工作单位：</td>
 								<td><input class="form-control" type="text" name="company" placeholder="大慈科技"></td>
 							</tr>
 							<tr class="erro">
-								<td style="text-align: right;">固定电话：</td>
+								<td>固定电话：</td>
 								<td><input type="text" name="guhua" placeholder="0311-82452363"></td>
 							</tr>
 							<tr class="warning">
-								<td style="text-align: right;">手机号码：</td>
+								<td>手机号码：</td>
 								<td><input type="text" name="phonenumber" placeholder="15031282452"></td>
 							</tr>
 							<tr class="erro">
-								<td style="text-align: right;">地&nbsp;&nbsp;&nbsp;&nbsp;域：</td>
+								<td>地&nbsp;&nbsp;&nbsp;&nbsp;域：</td>
 								<td><label name="area">石家庄市直</label></td>
 							</tr>
 							<tr class="warning">
-								<td style="text-align: right;">职&nbsp;&nbsp;&nbsp;&nbsp;称：</td>
+								<td>职&nbsp;&nbsp;&nbsp;&nbsp;称：</td>
 								<td>
 									<select name="zhicheng">
 										<option value="wu">无</option>
@@ -257,7 +256,7 @@
 								</td>
 							</tr>
 						</table>
-					</form>
+						<form form="info-edit"></form>
 				</div>
 			</div>	
 		</section>

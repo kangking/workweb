@@ -751,3 +751,79 @@ footer {
 	width: 400px;
 	margin: 10px auto;
 }
+
+/*购卡记录样式*/
+.card-record {
+	width: 600px;
+	margin: 20px auto;
+	text-align: center;
+}
+.card-record th {
+	background-color: #eee;
+	text-align: center;
+}
+
+/*会计证状态样式*/
+.account-state {
+	width: 600px;
+	margin:20px auto;
+	text-align: center;
+}
+.account-state th {
+	background-color: #eee;
+	text-align: center;
+}
+
+/*考试系统样式*/
+.exam-system {
+	width: 600px;
+	margin: 20px auto;
+}
+.tab-content {
+	padding-top: 10px;
+}
+#form-exam {
+	width: 100%;
+	margin-top: 15px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 10px;
+	text-align: center;
+}
+
+/*索取发票样式*/
+.fapiao {
+	width: 600px;
+	margin: 20px auto;
+}
+
+/*考试记录样式*/
+.table-first-center td:nth-child(1) {
+	text-align: center;
+}
+.table-first-right td:nth-child(1) {
+	text-align: right;
+}
+
+/*课程学习样式*/
+.learn-courses {
+	width: 600px;
+	margin: 10px auto;
+}
+.panel-else {
+	width:600px;
+	margin: 20px auto;
+}
+.table-wai>th {
+	background-color: #f5fdff;
+	width: 50px;
+	text-align: center;
+}
+.table-nei {
+	width: 100%;
+	text-align: center;
+}
+.table-nei th {
+	background-color: #f5fdff;
+	text-align: center;
+}
