@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-cn">
+<html ng-app="">
 <head>
 	<meta charset="utf-8">
 	<link rel="shortcut icon" type="image/x-icon" href="./images/logo.png">
@@ -11,62 +11,9 @@
 	<title>全国继续教育网首页！</title>
 </head>
 <body>
-	<header>
-		<!-- 导航开始 -->
-		<div class="top">
-			<iframe frameborder="0" src="./clock.html" scrolling="no" ></iframe>
-		</div>
-		<nav>
-			<div class="navbar" id="navbar">
-				<ul>
-					<li>
-						<a href="./index.html">首页</a>
-					</li>
-					<li>
-						<a href="./haohuashizi.html">豪华师资</a>
-					</li>
-					<li>
-						<a href="./online-buy.html">网上购卡</a>
-					</li>
-					<li>
-						<a href="./question-center.html">答疑中心</a>
-					</li>
-					<li>
-						<a href="./exam-center.html">试题中心</a>
-					</li>
-					<li>
-						<a href="./info-center.html">资讯中心</a>
-					</li>
-					<li>
-						<a href="./account-life.html">会计生涯</a>
-					</li>
-					<li>
-						<a href="./law-regul.html">法律法规</a>
-					</li>
-				</ul>
-				<div class="row" style="margin-top:-3px;">
-					<div class="col-sm-2.1">
-						<div class="input-group input-group-sm">
-							<input type="text" class="form-control">
-							<span class="input-group-btn">
-								<button class="btn btn-warning" type="button">搜索</button>
-							</span>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="dateinfo">
-				<img src="./images/laba.jpg">大家好！今天是：<span id="date"></span>
-			</div>
-		</nav>
-	</header>
-	<!-- 导航结束 -->
-
+	<div ng-include="'topnav.html'"></div>
 	<section class="main">
-		<!-- 主体开始 -->
-
 		<div class="first-row">
-			<!-- 第一行开始 -->
 			<div class="first-left">
 				<div class="tupianlunbo">
 					<div class="carousel slide" id="carousel-898833" style="width:290px;height:290px;">
@@ -135,750 +82,598 @@
 					</div>
 				</div>
 			</div>
-			<div class="userlogin" draggable="true">
-				<div class="login-title">
-					会员快速登录入口
-					<a href="#">[帮助]</a>
-				</div>
-				<form action="#" method="post" class="login-body">
-					<p>
-						<div class="input-group" style="width:180px;margin-left: 15%;">
-							<span class="input-group-addon">
-								<span class="glyphicon glyphicon-user" ></span>
-							</span>
-							<input type="text" class="form-control" name="username" placeholder="用户名"></div>
-					</p>
-					<p>
-						<div class="input-group" style="width:180px;margin-left: 15%;">
-							<span class="input-group-addon">
-								<span class="glyphicon glyphicon-lock" ></span>
-							</span>
-							<input type="password" class="form-control" name="passwd" placeholder="密码"></div>
-					</p>
-					<p>
-						<div class="input-group" style="width:180px;margin-left: 15%;">
-							<span class="input-group-addon">
-								<span class="glyphicon glyphicon-eye-open" ></span>
-							</span>
-							<input type="text" class="form-control" name="yangzhengma" placeholder="验证码">
-							<span class="input-group-addon">
-								<img src="http://www.lffkyy.com/include/vdimgck.php" style="width:42px;height:20px;"></span>
-						</div>
-					</p>
-					<p>
-						<a href="forget-passwd.html">忘记密码了？？</a>
-					</p>
-					<p>
-						<button class="btn btn-warning" type="submit">登录</button>
-						&nbsp;&nbsp;&nbsp;&nbsp;
-						<button class="btn btn-primary" type="button" onclick="javascript:window.location.href='./user-reg.html'">注册</button>
-					</p>
-
-				</form>
-
-				<img data-toggle="modal" src="images/sfdl.jpg" width="186" height="40" data-target="#myModal">
+			<div class="diyihang-right">
+				<div ng-include="'userlogin.html'"></div>
 			</div>
+		</div>
 
-			<!-- 模态框（Modal） -->
-			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" 
-   aria-labelledby="myModalLabel" aria-hidden="true">
-				<div class="modal-dialog">
-					<div class="modal-content" style="width:300px;text-align:center;">
-						<div class="modal-header">
-							<button type="button" class="close" 
-               data-dismiss="modal" aria-hidden="true">&times;</button>
-							<h4 class="modal-title" id="myModalLabel">身份证登录</h4>
-						</div>
-						<div class="modal-body">
-							<form id="form1">
-								<p>
-									<div class="input-group" style="width:210px;margin-left: 15%;">
-										<span class="input-group-addon">
-											<span class="glyphicon glyphicon-credit-card" ></span>
-										</span>
-										<input type="text" class="form-control" name="idnumber" placeholder="身份证号"></div>
-								</p>
-								<p>
-									<div class="input-group" style="width:210px;margin-left: 15%;">
-										<span class="input-group-addon">
-											<span class="glyphicon glyphicon-lock" ></span>
-										</span>
-										<input type="password" class="form-control" name="passwd" placeholder="密码"></div>
-								</p>
-								<p>
-									<div class="input-group" style="width:210px;margin-left: 15%;">
-										<span class="input-group-addon">
-											<span class="glyphicon glyphicon-eye-open" ></span>
-										</span>
-										<input type="text" class="form-control" name="yanzhengma" placeholder="验证码">
-										<span class="input-group-addon">
-											<img src="http://www.lffkyy.com/include/vdimgck.php" style="width:42px;height:20px;"></span>
-									</div>
-								</p>
-								<br/>
-								<a href="forget-passwd.html">忘记密码了？？</a>
-							</form>
-						</div>
-						<div class="modal-footer">
-							<button type="button" class="btn btn-default" 
-               data-dismiss="modal">关闭</button>
-							<button type="submit" class="btn btn-primary" form="form1">登录</button>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- 第一行结束 -->
-
-			<div class="second-row">
-				<!-- 第二行开始 -->
-				<img src="images/xssl.jpg">
-			</div>
+		<div class="second-row">
+			<!-- 第二行开始 -->
+			<img src="images/xssl.jpg">
+		</div>
 			<!-- 第二行结束 -->
 
-			<div class="third-row">
-				<!-- 第三行开始 -->
-				<div class="third-left">
-					<div class="mokuai-title">
-						最新公告
-						<span>
-							<a href="">更多>></a>
-						</span>
-					</div>
-					<div class="gonggao-body">
-						<dl>
-							<dt>
-								<a href="#">石家庄市裕华区会计人员继续教育</a>
-							</dt>
-							<dd>应广大学员要求,2014年会计人员继续教育学习报名时间延长至</dd>
-							<dt>
-								<a href="#">石家庄市裕华区会计人员继续教育</a>
-							</dt>
-							<dd>应广大学员要求,2014年会计人员继续教育学习报名时间延长至</dd>
-							<dt>
-								<a href="#">石家庄市裕华区会计人员继续教育</a>
-							</dt>
-							<dd>应广大学员要求,2014年会计人员继续教育学习报名时间延长至</dd>
-						</dl>
-					</div>
-				</div>
-				<div class="third-midle">
-					<div class="tabbable" id="tabs-759101">
-						<ul class="nav nav-tabs">
-							<li class="">
-								<a href="#">
-									<span style="font-weight:bolder;">试题中心</span>
-								</a>
-							</li>
-							<li class="active">
-								<a href="#panel-1" data-toggle="tab">初级职称</a>
-							</li>
-							<li class="">
-								<a href="#panel-2" data-toggle="tab">中级职称</a>
-							</li>
-							<li class="">
-								<a href="#panel-3" data-toggle="tab">会计从业证</a>
-							</li>
-							<li style="float:right;">
-								<a href="#">更多>></a>
-							</li>
-						</ul>
-						<div class="tab-content" style="background-color:#fff;">
-							<div class="tab-pane fade in active" id="panel-1">
-								<div class="hotnews">
-									<img src="images/laba2.jpg" style="margin-right:5px;">热门：宝莱特单色p-OLED亮度提升1-3倍 为OLED照明奠定基础</div>
-								<ul class="third-news">
-									<li>
-										<a href="#">2012年初级会计职称考试《初级会计实务》考前冲</a>
-										<span>[01-05]</span>
-									</li>
-									<li>
-										<a href="#">2012年初级会计职称考试《初级会计实务》考前冲</a>
-										<span>[01-05]</span>
-									</li>
-									<li>
-										<a href="#">2012年初级会计职称考试《初级会计实务》考前冲</a>
-										<span>[01-05]</span>
-									</li>
-									<li>
-										<a href="#">2012年初级会计职称考试《初级会计实务》考前冲</a>
-										<span>[01-05]</span>
-									</li>
-									<li>
-										<a href="#">2012年初级会计职称考试《初级会计实务》考前冲</a>
-										<span>[01-05]</span>
-									</li>
-									<li>
-										<a href="#">2012年初级会计职称考试《初级会计实务》考前冲</a>
-										<span>[01-05]</span>
-									</li>
-									<li>
-										<a href="#">2012年初级会计职称考试《初级会计实务》考前冲</a>
-										<span>[01-05]</span>
-									</li>
-								</ul>
-							</div>
-							<div class="tab-pane fade" id="panel-2">
-								<div class="hotnews">
-									<img src="images/laba2.jpg" style="margin-right:5px;">热门：宝莱特单色p-OLED亮度提升2-3倍 为OLED照明奠定基础</div>
-								<ul class="third-news">
-									<li>
-										<a href="#">2012年初级会计职称考试《初级会计实务》考前冲</a>
-										<span>[01-05]</span>
-									</li>
-									<li>
-										<a href="#">2012年初级会计职称考试《初级会计实务》考前冲</a>
-										<span>[01-05]</span>
-									</li>
-									<li>
-										<a href="#">2012年初级会计职称考试《初级会计实务》考前冲</a>
-										<span>[01-05]</span>
-									</li>
-									<li>
-										<a href="#">2012年初级会计职称考试《初级会计实务》考前冲</a>
-										<span>[01-05]</span>
-									</li>
-									<li>
-										<a href="#">2012年初级会计职称考试《初级会计实务》考前冲</a>
-										<span>[01-05]</span>
-									</li>
-									<li>
-										<a href="#">2012年初级会计职称考试《初级会计实务》考前冲</a>
-										<span>[01-05]</span>
-									</li>
-									<li>
-										<a href="#">2012年初级会计职称考试《初级会计实务》考前冲</a>
-										<span>[01-05]</span>
-									</li>
-								</ul>
-							</div>
-							<div class="tab-pane fade" id="panel-3">
-								<div class="hotnews">
-									<img src="images/laba2.jpg" style="margin-right:5px;">热门：宝莱特单色p-OLED亮度提升3-3倍 为OLED照明奠定基础</div>
-								<ul class="third-news">
-									<li>
-										<a href="#">2012年初级会计职称考试《初级会计实务》考前冲</a>
-										<span>[01-05]</span>
-									</li>
-									<li>
-										<a href="#">2012年初级会计职称考试《初级会计实务》考前冲</a>
-										<span>[01-05]</span>
-									</li>
-									<li>
-										<a href="#">2012年初级会计职称考试《初级会计实务》考前冲</a>
-										<span>[01-05]</span>
-									</li>
-									<li>
-										<a href="#">2012年初级会计职称考试《初级会计实务》考前冲</a>
-										<span>[01-05]</span>
-									</li>
-									<li>
-										<a href="#">2012年初级会计职称考试《初级会计实务》考前冲</a>
-										<span>[01-05]</span>
-									</li>
-									<li>
-										<a href="#">2012年初级会计职称考试《初级会计实务》考前冲</a>
-										<span>[01-05]</span>
-									</li>
-									<li>
-										<a href="#">2012年初级会计职称考试《初级会计实务》考前冲</a>
-										<span>[01-05]</span>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="third-right">
-					<div class="tongguo">
-						<div class="tongguo-title">
-							最新考试通过人员
-							<span>
-								<a href="">更多>></a>
-							</span>
-						</div>
-						<div class="tongguo-body">
-							<div  id="gundongbox">
-								<ul id="con1">
-									<li> <b>1河北省石家庄市裕华区</b>
-										张先生
-										<span>2013-09-18</span>
-									</li>
-									<li> <b>河北省石家庄市桥西区</b>
-										张先生
-										<span>2013-09-18</span>
-									</li>
-									<li>
-										<b>河北省石家庄市高新区</b>
-										张先生
-										<span>2013-09-18</span>
-									</li>
-									<li>
-										<b>河北省石家庄市市直</b>
-										张先生
-										<span>2013-09-18</span>
-									</li>
-									<li>
-										<b>河北省石家庄市新华区</b>
-										张先生
-										<span>2013-09-18</span>
-									</li>
-									<li>
-										<b>河北省石家庄市长安区</b>
-										张先生
-										<span>2013-09-18</span>
-									</li>
-									<li>
-										<b>河北省石家庄市桥东区</b>
-										张先生
-										<span>2013-09-18</span>
-									</li>
-								</ul>
-								<ul id="con2"></ul>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- 第三行结束 -->
-			<script type="text/javascript">
-				var area = document.getElementById('gundongbox');
-				var con1 = document.getElementById('con1');
-				var con2 = document.getElementById('con2');
-				var speed = 100;
-				area.scrollTop = 0;
-				con2.innerHTML = con1.innerHTML;
-				function scrollUp(){
-
-					if(area.scrollTop >= con1.scrollHeight) 
-					{
-						area.scrollTop = 0;
-					}else{
-						area.scrollTop ++; 
-					}
-				}
-				var myScroll = setInterval("scrollUp()",speed);
-				area.onmouseover = function(){
-					 clearInterval(myScroll);
-				}
-				area.onmouseout = function(){
-					 myScroll = setInterval("scrollUp()",speed);
-				}
-			</script>
-
-			<div class="fourth-row">
-				<!-- 第四行开始 -->
-				<div class="fourth-left">
-					<img src="images/contact.jpg" width="100%" height="100%"></div>
-				<div class="fourth-midle">
-					<div class="mokuai-title">
-						<img src="images/w.jpg"  style="margin-right:5px" />
-						会计人员供需信息
-						<span>
-							<a href="">更多>></a>
-						</span>
-					</div>
-					<div class="gongxu">
-						<dl class="fontlink">
-							<dt class="gongxu1">最新登记单位</dt>
-							<dd>
-								<a href="#">河北省石家庄市大慈科技有限公司</a>
-							</dd>
-							<dd>
-								<a href="#">河北省石家庄市大慈科技有限公司</a>
-							</dd>
-							<dd>
-								<a href="#">河北省石家庄市大慈科技有限公司</a>
-							</dd>
-							<dt class="gongxu2">最新登记个人</dt>
-							<dd>
-								<a href="#">河北省石家庄市大慈科技有限公司</a>
-							</dd>
-							<dd>
-								<a href="#">河北省石家庄市大慈科技有限公司</a>
-							</dd>
-							<dd>
-								<a href="#">河北省石家庄市大慈科技有限公司</a>
-							</dd>
-						</dl>
-					</div>
-				</div>
-				<div class="fourth-right">
-					<div class="tabbable">
-						<ul class="nav nav-tabs">
-							<li class="active">
-								<a style="font-size:16px;font-weight:bold;color:#f16913;">
-									<img src="images/book.jpg" style="margin-right:5px;margin-top:-3px;" />
-									问题答疑
-								</a>
-							</li>
-							<li style="float:right;">
-								<a href="#">更多>></a>
-							</li>
-						</ul>
-						<div class="tab-content" style="margin-top:10px;">
-							<div class="active">
-								<ul class="wentidayi fontlink">
-									<li>
-										<a href="">2014年正高级会计证报名表何时</a>
-									</li>
-									<li>
-										<a href="">2014年正高级会计证报名表何时</a>
-									</li>
-									<li>
-										<a href="">2014年正高级会计证报名表何时</a>
-									</li>
-									<li>
-										<a href="">2014年正高级会计证报名表何时</a>
-									</li>
-									<li>
-										<a href="">2014年正高级会计证报名表何时</a>
-									</li>
-									<li>
-										<a href="">2014年正高级会计证报名表何时</a>
-									</li>
-									<li>
-										<a href="">2014年正高级会计证报名表何时</a>
-									</li>
-									<li>
-										<a href="">2014年正高级会计证报名表何时</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- 第四行结束 -->
-
-			<div class="sixth-row">
-				<!-- 第六行开始 -->
-				<img src="images/111.jpg"></div>
-			<!-- 第六行结束 -->
-
-			<div class="fifth-row">
-				<!-- 第五行开始 -->
-				<div class="fifth-left">
-					<div class="tabqiehuan">
-						<div class="tab-head">
-							<b class="tab-title"><img src="images/qx.jpg" style="margin-right:5px;" />
-								会计生涯</b> 
-							<ul class="tab-nav" id="tab-nav">
-								<li>指南</li>
-								<li>职场</li>
-								<li>人物</li>
-								<li>趣闻</li>
-								<li>其他</li>
-								<a class="more-right" href="#">更多>></a>
-							</ul>
-						</div>
-						<div class="tab-main" id="tab-main">
-							<div style="display:block;">
-								<ul class="kuaiji-news">
-									<li>
-										<a href="#">2014年初级会计职称考试《初级会计实务》考前冲刺</a>
-										<span>[01-05]</span>
-									</li>
-									<li>
-										<a href="#">2014年初级会计职称考试《初级会计实务》考前冲刺</a>
-										<span>[01-05]</span>
-									</li>
-									<li>
-										<a href="#">2014年初级会计职称考试《初级会计实务》考前冲刺</a>
-										<span>[01-05]</span>
-									</li>
-									<li>
-										<a href="#">2014年初级会计职称考试《初级会计实务》考前冲刺</a>
-										<span>[01-05]</span>
-									</li>
-									<li>
-										<a href="#">2014年初级会计职称考试《初级会计实务》考前冲刺</a>
-										<span>[01-05]</span>
-									</li>
-									<li>
-										<a href="#">2014年初级会计职称考试《初级会计实务》考前冲刺</a>
-										<span>[01-05]</span>
-									</li>
-									<li>
-										<a href="#">2014年初级会计职称考试《初级会计实务》考前冲刺</a>
-										<span>[01-05]</span>
-									</li>
-								</ul>
-								<span style="padding-right:10px;">
-									<img src="images/1.jpg" style="
-									margin-bottom:5px;">
-									<p style="font-size:14px;font-weight:bolder;color:#444;">2014年会计初级职称</p>
-									<p style="font-size:14px;color:#666;">打发是短发的康复尽快大幅的减肥的发生的的发生的罚款了多少发的手机伐啦是地方到了看范德萨范德萨浪费</p>
-								</span>
-							</div>
-							<div style="display:none;">
-								<ul class="kuaiji-news">
-									<li>
-										<a href="#">2013年初级会计职称考试《初级会计实务》考前冲刺</a>
-										<span>[01-05]</span>
-									</li>
-									<li>
-										<a href="#">2013年初级会计职称考试《初级会计实务》考前冲刺</a>
-										<span>[01-05]</span>
-									</li>
-									<li>
-										<a href="#">2013年初级会计职称考试《初级会计实务》考前冲刺</a>
-										<span>[01-05]</span>
-									</li>
-									<li>
-										<a href="#">2013年初级会计职称考试《初级会计实务》考前冲刺</a>
-										<span>[01-05]</span>
-									</li>
-									<li>
-										<a href="#">2013年初级会计职称考试《初级会计实务》考前冲刺</a>
-										<span>[01-05]</span>
-									</li>
-									<li>
-										<a href="#">2013年初级会计职称考试《初级会计实务》考前冲刺</a>
-										<span>[01-05]</span>
-									</li>
-									<li>
-										<a href="#">2013年初级会计职称考试《初级会计实务》考前冲刺</a>
-										<span>[01-05]</span>
-									</li>
-								</ul>
-								<span style="padding-right:10px;">
-									<img src="images/1.jpg" style="
-									margin-bottom:5px;">
-									<p style="font-size:14px;font-weight:bolder;color:#444;">2013年会计初级职称</p>
-									<p style="font-size:14px;color:#666;">打发是短发的康复尽快大幅的减肥的发生的的发生的罚款了多少发的手机伐啦是地方到了看范德萨范德萨浪费</p>
-								</span>
-							</div>
-							<div style="display:none;">
-								<ul class="kuaiji-news">
-									<li>
-										<a href="#">2012年初级会计职称考试《初级会计实务》考前冲刺</a>
-										<span>[01-05]</span>
-									</li>
-									<li>
-										<a href="#">2012年初级会计职称考试《初级会计实务》考前冲刺</a>
-										<span>[01-05]</span>
-									</li>
-									<li>
-										<a href="#">2012年初级会计职称考试《初级会计实务》考前冲刺</a>
-										<span>[01-05]</span>
-									</li>
-									<li>
-										<a href="#">2012年初级会计职称考试《初级会计实务》考前冲刺</a>
-										<span>[01-05]</span>
-									</li>
-									<li>
-										<a href="#">2012年初级会计职称考试《初级会计实务》考前冲刺</a>
-										<span>[01-05]</span>
-									</li>
-									<li>
-										<a href="#">2012年初级会计职称考试《初级会计实务》考前冲刺</a>
-										<span>[01-05]</span>
-									</li>
-									<li>
-										<a href="#">2012年初级会计职称考试《初级会计实务》考前冲刺</a>
-										<span>[01-05]</span>
-									</li>
-								</ul>
-								<span style="padding-right:10px;">
-									<img src="images/1.jpg" style="
-									margin-bottom:5px;">
-									<p style="font-size:14px;font-weight:bolder;color:#444;">2012年会计初级职称</p>
-									<p style="font-size:14px;color:#666;">打发是短发的康复尽快大幅的减肥的发生的的发生的罚款了多少发的手机伐啦是地方到了看范德萨范德萨浪费</p>
-								</span>
-							</div>
-							<div style="display:none;">
-								<ul class="kuaiji-news">
-									<li>
-										<a href="#">2011年初级会计职称考试《初级会计实务》考前冲刺</a>
-										<span>[01-05]</span>
-									</li>
-									<li>
-										<a href="#">2011年初级会计职称考试《初级会计实务》考前冲刺</a>
-										<span>[01-05]</span>
-									</li>
-									<li>
-										<a href="#">2011年初级会计职称考试《初级会计实务》考前冲刺</a>
-										<span>[01-05]</span>
-									</li>
-									<li>
-										<a href="#">2011年初级会计职称考试《初级会计实务》考前冲刺</a>
-										<span>[01-05]</span>
-									</li>
-									<li>
-										<a href="#">2011年初级会计职称考试《初级会计实务》考前冲刺</a>
-										<span>[01-05]</span>
-									</li>
-									<li>
-										<a href="#">2011年初级会计职称考试《初级会计实务》考前冲刺</a>
-										<span>[01-05]</span>
-									</li>
-									<li>
-										<a href="#">2011年初级会计职称考试《初级会计实务》考前冲刺</a>
-										<span>[01-05]</span>
-									</li>
-								</ul>
-								<span style="padding-right:10px;">
-									<img src="images/1.jpg" style="
-									margin-bottom:5px;">
-									<p style="font-size:14px;font-weight:bolder;color:#444;">2011年会计初级职称</p>
-									<p style="font-size:14px;color:#666;">打发是短发的康复尽快大幅的减肥的发生的的发生的罚款了多少发的手机伐啦是地方到了看范德萨范德萨浪费</p>
-								</span>
-							</div>
-							<div style="display:none;">
-								<ul class="kuaiji-news">
-									<li>
-										<a href="#">2010年初级会计职称考试《初级会计实务》考前冲刺</a>
-										<span>[01-05]</span>
-									</li>
-									<li>
-										<a href="#">2010年初级会计职称考试《初级会计实务》考前冲刺</a>
-										<span>[01-05]</span>
-									</li>
-									<li>
-										<a href="#">2010年初级会计职称考试《初级会计实务》考前冲刺</a>
-										<span>[01-05]</span>
-									</li>
-									<li>
-										<a href="#">2010年初级会计职称考试《初级会计实务》考前冲刺</a>
-										<span>[01-05]</span>
-									</li>
-									<li>
-										<a href="#">2010年初级会计职称考试《初级会计实务》考前冲刺</a>
-										<span>[01-05]</span>
-									</li>
-									<li>
-										<a href="#">2010年初级会计职称考试《初级会计实务》考前冲刺</a>
-										<span>[01-05]</span>
-									</li>
-									<li>
-										<a href="#">2010年初级会计职称考试《初级会计实务》考前冲刺</a>
-										<span>[01-05]</span>
-									</li>
-								</ul>
-								<span style="padding-right:10px;">
-									<img src="images/1.jpg" style="
-									margin-bottom:5px;">
-									<p style="font-size:14px;font-weight:bolder;color:#444;">2010年会计初级职称</p>
-									<p style="font-size:14px;color:#666;">打发是短发的康复尽快大幅的减肥的发生的的发生的罚款了多少发的手机伐啦是地方到了看范德萨范德萨浪费</p>
-								</span>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="fifth-right">
-					<div class="tabbable">
-						<ul class="nav nav-tabs">
-							<li class="active">
-								<a style="font-size:16px;font-weight:bold;color:#f16913;">
-									<img src="images/book.jpg" style="margin-right:5px;margin-top:-3px;" />
-									豪华师资
-								</a>
-							</li>
-							<li style="float:right;">
-								<a href="#">更多>></a>
-							</li>
-						</ul>
-						<div class="tab-content" style="margin-top:10px;">
-							<div class="active">
-								<ul class="haohuashizi">
-									<li>
-										<img src="images/1111.jpg">
-										<span>
-											<p>
-												<b>任成印</b>
-											</p>
-											生于1986年，河北经贸大学法学院教授，硕士研究生导师。
-										</span>
-									</li>
-									<li>
-										<img src="images/1111.jpg">
-										<span>
-											<p>
-												<b>任成印</b>
-											</p>
-											生于1986年，河北经贸大学法学院教授，硕士研究生导师。
-										</span>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- 第五行结束 -->
-
-			<div class="seventh-row">
-				<!-- 第七行开始 -->
-				<div class="tabbable">
+		<div class="third-row">
+			<!-- 第三行开始 -->
+			<div ng-include="'newest-notice.html'" style="width:240px;"></div>
+			<div class="third-midle">
+				<div class="tabbable" id="tabs-759101">
 					<ul class="nav nav-tabs">
-						<li class="active">
-							<a style="font-size:14px;font-weight:bold;">
-								<img src="images/link.jpg" style="margin-right:5px;margin-top:-3px;" />
-								友情链接
+						<li class="">
+							<a href="#">
+								<span style="font-weight:bolder;">试题中心</span>
 							</a>
 						</li>
-						<span style="display:inline-block;float:right;font-size:13px;color:#888;height:50px;line-height:50px;margin-right:10px;">大慈会计是权威的会计培训机构,提供全国会计人员继续教育、职称考试注税考试服务！</span>
+						<li class="active">
+							<a href="#panel-1" data-toggle="tab">初级职称</a>
+						</li>
+						<li class="">
+							<a href="#panel-2" data-toggle="tab">中级职称</a>
+						</li>
+						<li class="">
+							<a href="#panel-3" data-toggle="tab">会计从业证</a>
+						</li>
+						<li style="float:right;">
+							<a href="#">更多>></a>
+						</li>
 					</ul>
-					<div class="tab-content" style="margin-top:10px;">
-						<div class="active yqlj">
-							<span>
-								<a href="http://www.daciacc.com" target="_blank">大慈教育</a>
-							</span>
-							|
-							<span>
-								<a href="http://book.baidu.com" target="_blank">百度图书</a>
-							</span>
-							|
-							<span>
-								<a href="http://www.hebkjxx.cn" target="_blank">河北会计信息网</a>
-							</span>
+					<div class="tab-content" style="background-color:#fff;">
+						<div class="tab-pane fade in active" id="panel-1">
+							<div class="hotnews">
+								<img src="images/laba2.jpg" style="margin-right:5px;">热门：宝莱特单色p-OLED亮度提升1-3倍 为OLED照明奠定基础</div>
+							<ul class="third-news">
+								<li>
+									<a href="#">2012年初级会计职称考试《初级会计实务》考前冲</a>
+									<span>[01-05]</span>
+								</li>
+								<li>
+									<a href="#">2012年初级会计职称考试《初级会计实务》考前冲</a>
+									<span>[01-05]</span>
+								</li>
+								<li>
+									<a href="#">2012年初级会计职称考试《初级会计实务》考前冲</a>
+									<span>[01-05]</span>
+								</li>
+								<li>
+									<a href="#">2012年初级会计职称考试《初级会计实务》考前冲</a>
+									<span>[01-05]</span>
+								</li>
+								<li>
+									<a href="#">2012年初级会计职称考试《初级会计实务》考前冲</a>
+									<span>[01-05]</span>
+								</li>
+								<li>
+									<a href="#">2012年初级会计职称考试《初级会计实务》考前冲</a>
+									<span>[01-05]</span>
+								</li>
+								<li>
+									<a href="#">2012年初级会计职称考试《初级会计实务》考前冲</a>
+									<span>[01-05]</span>
+								</li>
+							</ul>
+						</div>
+						<div class="tab-pane fade" id="panel-2">
+							<div class="hotnews">
+								<img src="images/laba2.jpg" style="margin-right:5px;">热门：宝莱特单色p-OLED亮度提升2-3倍 为OLED照明奠定基础</div>
+							<ul class="third-news">
+								<li>
+									<a href="#">2012年初级会计职称考试《初级会计实务》考前冲</a>
+									<span>[01-05]</span>
+								</li>
+								<li>
+									<a href="#">2012年初级会计职称考试《初级会计实务》考前冲</a>
+									<span>[01-05]</span>
+								</li>
+								<li>
+									<a href="#">2012年初级会计职称考试《初级会计实务》考前冲</a>
+									<span>[01-05]</span>
+								</li>
+								<li>
+									<a href="#">2012年初级会计职称考试《初级会计实务》考前冲</a>
+									<span>[01-05]</span>
+								</li>
+								<li>
+									<a href="#">2012年初级会计职称考试《初级会计实务》考前冲</a>
+									<span>[01-05]</span>
+								</li>
+								<li>
+									<a href="#">2012年初级会计职称考试《初级会计实务》考前冲</a>
+									<span>[01-05]</span>
+								</li>
+								<li>
+									<a href="#">2012年初级会计职称考试《初级会计实务》考前冲</a>
+									<span>[01-05]</span>
+								</li>
+							</ul>
+						</div>
+						<div class="tab-pane fade" id="panel-3">
+							<div class="hotnews">
+								<img src="images/laba2.jpg" style="margin-right:5px;">热门：宝莱特单色p-OLED亮度提升3-3倍 为OLED照明奠定基础</div>
+							<ul class="third-news">
+								<li>
+									<a href="#">2012年初级会计职称考试《初级会计实务》考前冲</a>
+									<span>[01-05]</span>
+								</li>
+								<li>
+									<a href="#">2012年初级会计职称考试《初级会计实务》考前冲</a>
+									<span>[01-05]</span>
+								</li>
+								<li>
+									<a href="#">2012年初级会计职称考试《初级会计实务》考前冲</a>
+									<span>[01-05]</span>
+								</li>
+								<li>
+									<a href="#">2012年初级会计职称考试《初级会计实务》考前冲</a>
+									<span>[01-05]</span>
+								</li>
+								<li>
+									<a href="#">2012年初级会计职称考试《初级会计实务》考前冲</a>
+									<span>[01-05]</span>
+								</li>
+								<li>
+									<a href="#">2012年初级会计职称考试《初级会计实务》考前冲</a>
+									<span>[01-05]</span>
+								</li>
+								<li>
+									<a href="#">2012年初级会计职称考试《初级会计实务》考前冲</a>
+									<span>[01-05]</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="third-right">
+				<div class="tongguo">
+					<div class="tongguo-title">
+						最新考试通过人员
+						<span>
+							<a href="">更多>></a>
+						</span>
+					</div>
+					<div class="tongguo-body">
+						<div  id="gundongbox">
+							<ul id="con1">
+								<li> <b>1河北省石家庄市裕华区</b>
+									张先生
+									<span>2013-09-18</span>
+								</li>
+								<li> <b>河北省石家庄市桥西区</b>
+									张先生
+									<span>2013-09-18</span>
+								</li>
+								<li>
+									<b>河北省石家庄市高新区</b>
+									张先生
+									<span>2013-09-18</span>
+								</li>
+								<li>
+									<b>河北省石家庄市市直</b>
+									张先生
+									<span>2013-09-18</span>
+								</li>
+								<li>
+									<b>河北省石家庄市新华区</b>
+									张先生
+									<span>2013-09-18</span>
+								</li>
+								<li>
+									<b>河北省石家庄市长安区</b>
+									张先生
+									<span>2013-09-18</span>
+								</li>
+								<li>
+									<b>河北省石家庄市桥东区</b>
+									张先生
+									<span>2013-09-18</span>
+								</li>
+							</ul>
+							<ul id="con2"></ul>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<!-- 第七行结束 -->
+		<!-- 第三行结束 -->
+		<script type="text/javascript">
+			var area = document.getElementById('gundongbox');
+			var con1 = document.getElementById('con1');
+			var con2 = document.getElementById('con2');
+			var speed = 100;
+			area.scrollTop = 0;
+			con2.innerHTML = con1.innerHTML;
+			function scrollUp(){
 
-		</section>
-		<!-- 主体结束 -->
+				if(area.scrollTop >= con1.scrollHeight) 
+				{
+					area.scrollTop = 0;
+				}else{
+					area.scrollTop ++; 
+				}
+			}
+			var myScroll = setInterval("scrollUp()",speed);
+			area.onmouseover = function(){
+				 clearInterval(myScroll);
+			}
+			area.onmouseout = function(){
+				 myScroll = setInterval("scrollUp()",speed);
+			}
+		</script>
 
-		<footer>
-			<!-- 底部开始 -->
-			<div>
-				<div class="foot-nav">
-					<ul>
-						<li>
-							<a href="#">网站首页</a>
-							|
-						</li>
-						<li>
-							<a href="#">关于我们</a>
-							|
-						</li>
-						<li>
-							<a href="#">版权信息</a>
-							|
-						</li>
-						<li>
-							<a href="#">合作伙伴</a>
-							|
-						</li>
-						<li>
-							<a href="#">代理加盟</a>
-							|
-						</li>
-						<li>
-							<a href="#">招聘信息</a>
-						</li>
-					</ul>
+		<div class="fourth-row">
+			<!-- 第四行开始 -->
+			<div class="fourth-left">
+				<div ng-include="'customer-service.html'"></div>
+			</div>
+			<div class="fourth-midle">
+				<div class="mokuai-title">
+					<img src="images/w.jpg"  style="margin-right:5px" />
+					会计人员供需信息
+					<span>
+						<a href="">更多>></a>
+					</span>
 				</div>
-				<div class="copyright">
-					备案：冀ICP备11000002 电信业务审批[2010]字第138号
-					<br />
-					大慈会计-专业培训 CopyRight@2014-2016 大慈科技 All Rights Reservered
+				<div class="gongxu">
+					<dl class="fontlink">
+						<dt class="gongxu1">最新登记单位</dt>
+						<dd>
+							<a href="#">河北省石家庄市大慈科技有限公司</a>
+						</dd>
+						<dd>
+							<a href="#">河北省石家庄市大慈科技有限公司</a>
+						</dd>
+						<dd>
+							<a href="#">河北省石家庄市大慈科技有限公司</a>
+						</dd>
+						<dt class="gongxu2">最新登记个人</dt>
+						<dd>
+							<a href="#">河北省石家庄市大慈科技有限公司</a>
+						</dd>
+						<dd>
+							<a href="#">河北省石家庄市大慈科技有限公司</a>
+						</dd>
+						<dd>
+							<a href="#">河北省石家庄市大慈科技有限公司</a>
+						</dd>
+					</dl>
 				</div>
 			</div>
-		</footer>
-		<!-- 底部结束 -->
+			<div class="fourth-right">
+				<div class="tabbable">
+					<ul class="nav nav-tabs">
+						<li class="active">
+							<a style="font-size:16px;font-weight:bold;color:#f16913;">
+								<img src="images/book.jpg" style="margin-right:5px;margin-top:-3px;" />
+								问题答疑
+							</a>
+						</li>
+						<li style="float:right;">
+							<a href="#">更多>></a>
+						</li>
+					</ul>
+					<div class="tab-content" style="margin-top:10px;">
+						<div class="active">
+							<ul class="wentidayi fontlink">
+								<li>
+									<a href="">2014年正高级会计证报名表何时</a>
+								</li>
+								<li>
+									<a href="">2014年正高级会计证报名表何时</a>
+								</li>
+								<li>
+									<a href="">2014年正高级会计证报名表何时</a>
+								</li>
+								<li>
+									<a href="">2014年正高级会计证报名表何时</a>
+								</li>
+								<li>
+									<a href="">2014年正高级会计证报名表何时</a>
+								</li>
+								<li>
+									<a href="">2014年正高级会计证报名表何时</a>
+								</li>
+								<li>
+									<a href="">2014年正高级会计证报名表何时</a>
+								</li>
+								<li>
+									<a href="">2014年正高级会计证报名表何时</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 第四行结束 -->
+
+		<div class="sixth-row">
+			<!-- 第六行开始 -->
+			<img src="images/111.jpg"></div>
+		<!-- 第六行结束 -->
+
+		<div class="fifth-row">
+			<!-- 第五行开始 -->
+			<div class="fifth-left">
+				<div class="tabqiehuan">
+					<div class="tab-head">
+						<b class="tab-title"><img src="images/qx.jpg" style="margin-right:5px;" />
+							会计生涯</b> 
+						<ul class="tab-nav" id="tab-nav">
+							<li>指南</li>
+							<li>职场</li>
+							<li>人物</li>
+							<li>趣闻</li>
+							<li>其他</li>
+							<a class="more-right" href="#">更多>></a>
+						</ul>
+					</div>
+					<div class="tab-main" id="tab-main">
+						<div style="display:block;">
+							<ul class="kuaiji-news">
+								<li>
+									<a href="#">2014年初级会计职称考试《初级会计实务》考前冲刺</a>
+									<span>[01-05]</span>
+								</li>
+								<li>
+									<a href="#">2014年初级会计职称考试《初级会计实务》考前冲刺</a>
+									<span>[01-05]</span>
+								</li>
+								<li>
+									<a href="#">2014年初级会计职称考试《初级会计实务》考前冲刺</a>
+									<span>[01-05]</span>
+								</li>
+								<li>
+									<a href="#">2014年初级会计职称考试《初级会计实务》考前冲刺</a>
+									<span>[01-05]</span>
+								</li>
+								<li>
+									<a href="#">2014年初级会计职称考试《初级会计实务》考前冲刺</a>
+									<span>[01-05]</span>
+								</li>
+								<li>
+									<a href="#">2014年初级会计职称考试《初级会计实务》考前冲刺</a>
+									<span>[01-05]</span>
+								</li>
+								<li>
+									<a href="#">2014年初级会计职称考试《初级会计实务》考前冲刺</a>
+									<span>[01-05]</span>
+								</li>
+							</ul>
+							<span style="padding-right:10px;">
+								<img src="images/1.jpg" style="margin-bottom:5px;">
+								<p style="font-size:14px;font-weight:bolder;color:#444;">2014年会计初级职称</p>
+								<p style="font-size:14px;color:#666;">打发是短发的康复尽快大幅的减肥的发生的的发生的罚款了多少发的手机伐啦是地方到了看范德萨范德萨浪费</p>
+							</span>
+						</div>
+						<div style="display:none;">
+							<ul class="kuaiji-news">
+								<li>
+									<a href="#">2013年初级会计职称考试《初级会计实务》考前冲刺</a>
+									<span>[01-05]</span>
+								</li>
+								<li>
+									<a href="#">2013年初级会计职称考试《初级会计实务》考前冲刺</a>
+									<span>[01-05]</span>
+								</li>
+								<li>
+									<a href="#">2013年初级会计职称考试《初级会计实务》考前冲刺</a>
+									<span>[01-05]</span>
+								</li>
+								<li>
+									<a href="#">2013年初级会计职称考试《初级会计实务》考前冲刺</a>
+									<span>[01-05]</span>
+								</li>
+								<li>
+									<a href="#">2013年初级会计职称考试《初级会计实务》考前冲刺</a>
+									<span>[01-05]</span>
+								</li>
+								<li>
+									<a href="#">2013年初级会计职称考试《初级会计实务》考前冲刺</a>
+									<span>[01-05]</span>
+								</li>
+								<li>
+									<a href="#">2013年初级会计职称考试《初级会计实务》考前冲刺</a>
+									<span>[01-05]</span>
+								</li>
+							</ul>
+							<span style="padding-right:10px;">
+								<img src="images/1.jpg" style="margin-bottom:5px;">
+								<p style="font-size:14px;font-weight:bolder;color:#444;">2013年会计初级职称</p>
+								<p style="font-size:14px;color:#666;">打发是短发的康复尽快大幅的减肥的发生的的发生的罚款了多少发的手机伐啦是地方到了看范德萨范德萨浪费</p>
+							</span>
+						</div>
+						<div style="display:none;">
+							<ul class="kuaiji-news">
+								<li>
+									<a href="#">2012年初级会计职称考试《初级会计实务》考前冲刺</a>
+									<span>[01-05]</span>
+								</li>
+								<li>
+									<a href="#">2012年初级会计职称考试《初级会计实务》考前冲刺</a>
+									<span>[01-05]</span>
+								</li>
+								<li>
+									<a href="#">2012年初级会计职称考试《初级会计实务》考前冲刺</a>
+									<span>[01-05]</span>
+								</li>
+								<li>
+									<a href="#">2012年初级会计职称考试《初级会计实务》考前冲刺</a>
+									<span>[01-05]</span>
+								</li>
+								<li>
+									<a href="#">2012年初级会计职称考试《初级会计实务》考前冲刺</a>
+									<span>[01-05]</span>
+								</li>
+								<li>
+									<a href="#">2012年初级会计职称考试《初级会计实务》考前冲刺</a>
+									<span>[01-05]</span>
+								</li>
+								<li>
+									<a href="#">2012年初级会计职称考试《初级会计实务》考前冲刺</a>
+									<span>[01-05]</span>
+								</li>
+							</ul>
+							<span style="padding-right:10px;">
+								<img src="images/1.jpg" style="margin-bottom:5px;">
+								<p style="font-size:14px;font-weight:bolder;color:#444;">2012年会计初级职称</p>
+								<p style="font-size:14px;color:#666;">打发是短发的康复尽快大幅的减肥的发生的的发生的罚款了多少发的手机伐啦是地方到了看范德萨范德萨浪费</p>
+							</span>
+						</div>
+						<div style="display:none;">
+							<ul class="kuaiji-news">
+								<li>
+									<a href="#">2011年初级会计职称考试《初级会计实务》考前冲刺</a>
+									<span>[01-05]</span>
+								</li>
+								<li>
+									<a href="#">2011年初级会计职称考试《初级会计实务》考前冲刺</a>
+									<span>[01-05]</span>
+								</li>
+								<li>
+									<a href="#">2011年初级会计职称考试《初级会计实务》考前冲刺</a>
+									<span>[01-05]</span>
+								</li>
+								<li>
+									<a href="#">2011年初级会计职称考试《初级会计实务》考前冲刺</a>
+									<span>[01-05]</span>
+								</li>
+								<li>
+									<a href="#">2011年初级会计职称考试《初级会计实务》考前冲刺</a>
+									<span>[01-05]</span>
+								</li>
+								<li>
+									<a href="#">2011年初级会计职称考试《初级会计实务》考前冲刺</a>
+									<span>[01-05]</span>
+								</li>
+								<li>
+									<a href="#">2011年初级会计职称考试《初级会计实务》考前冲刺</a>
+									<span>[01-05]</span>
+								</li>
+							</ul>
+							<span style="padding-right:10px;">
+								<img src="images/1.jpg" style="
+								margin-bottom:5px;">
+								<p style="font-size:14px;font-weight:bolder;color:#444;">2011年会计初级职称</p>
+								<p style="font-size:14px;color:#666;">打发是短发的康复尽快大幅的减肥的发生的的发生的罚款了多少发的手机伐啦是地方到了看范德萨范德萨浪费</p>
+							</span>
+						</div>
+						<div style="display:none;">
+							<ul class="kuaiji-news">
+								<li>
+									<a href="#">2010年初级会计职称考试《初级会计实务》考前冲刺</a>
+									<span>[01-05]</span>
+								</li>
+								<li>
+									<a href="#">2010年初级会计职称考试《初级会计实务》考前冲刺</a>
+									<span>[01-05]</span>
+								</li>
+								<li>
+									<a href="#">2010年初级会计职称考试《初级会计实务》考前冲刺</a>
+									<span>[01-05]</span>
+								</li>
+								<li>
+									<a href="#">2010年初级会计职称考试《初级会计实务》考前冲刺</a>
+									<span>[01-05]</span>
+								</li>
+								<li>
+									<a href="#">2010年初级会计职称考试《初级会计实务》考前冲刺</a>
+									<span>[01-05]</span>
+								</li>
+								<li>
+									<a href="#">2010年初级会计职称考试《初级会计实务》考前冲刺</a>
+									<span>[01-05]</span>
+								</li>
+								<li>
+									<a href="#">2010年初级会计职称考试《初级会计实务》考前冲刺</a>
+									<span>[01-05]</span>
+								</li>
+							</ul>
+							<span style="padding-right:10px;">
+								<img src="images/1.jpg" style="margin-bottom:5px;">
+								<p style="font-size:14px;font-weight:bolder;color:#444;">2010年会计初级职称</p>
+								<p style="font-size:14px;color:#666;">打发是短发的康复尽快大幅的减肥的发生的的发生的罚款了多少发的手机伐啦是地方到了看范德萨范德萨浪费</p>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="fifth-right">
+				<div class="tabbable">
+					<ul class="nav nav-tabs">
+						<li class="active">
+							<a style="font-size:16px;font-weight:bold;color:#f16913;">
+								<img src="images/book.jpg" style="margin-right:5px;margin-top:-3px;" />
+								豪华师资
+							</a>
+						</li>
+						<li style="float:right;">
+							<a href="#">更多>></a>
+						</li>
+					</ul>
+					<div class="tab-content" style="margin-top:10px;">
+						<div class="active">
+							<ul class="haohuashizi">
+								<li>
+									<img src="images/1111.jpg">
+									<span>
+										<p>
+											<b>任成印</b>
+										</p>
+										生于1986年，河北经贸大学法学院教授，硕士研究生导师。
+									</span>
+								</li>
+								<li>
+									<img src="images/1111.jpg">
+									<span>
+										<p>
+											<b>任成印</b>
+										</p>
+										生于1986年，河北经贸大学法学院教授，硕士研究生导师。
+									</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 第五行结束 -->
+
+		<div class="seventh-row">
+			<!-- 第七行开始 -->
+			<div class="tabbable">
+				<ul class="nav nav-tabs">
+					<li class="active">
+						<a style="font-size:14px;font-weight:bold;">
+							<img src="images/link.jpg" style="margin-right:5px;margin-top:-3px;" />
+							友情链接
+						</a>
+					</li>
+					<span style="display:inline-block;float:right;font-size:13px;color:#888;height:50px;line-height:50px;margin-right:10px;">大慈会计是权威的会计培训机构,提供全国会计人员继续教育、职称考试注税考试服务！</span>
+				</ul>
+				<div class="tab-content" style="margin-top:10px;">
+					<div class="active yqlj">
+						<span>
+							<a href="http://www.daciacc.com" target="_blank">大慈教育</a>
+						</span>
+						|
+						<span>
+							<a href="http://book.baidu.com" target="_blank">百度图书</a>
+						</span>
+						|
+						<span>
+							<a href="http://www.hebkjxx.cn" target="_blank">河北会计信息网</a>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 第七行结束 -->
+	</section>
+
+	<div ng-include="'footer.html'"></div>
+
+	<script src="http://apps.bdimg.com/libs/angular.js/1.2.15/angular.min.js"></script>
+
 </body>
-	</html>
+</html>

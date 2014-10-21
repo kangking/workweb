@@ -136,9 +136,8 @@ nav {
 }
 /*用户登录版块*/
 .userlogin {
-	width: 250px;
+	width: 100%;
 	height: 316px;
-	float: right;
 	background-color: #fff6ea;
 	border:1px solid #ffd8b3;
 	text-align: center;
@@ -168,6 +167,10 @@ nav {
 .login-body button {
 	width: 80px;
 }
+.diyihang-right {
+	width: 250px;
+	float: right;
+}
 /*第二行样式--学习流程版块*/
 .second-row {
 	width: 990px;
@@ -184,8 +187,9 @@ nav {
 	float: left;
 	margin: 10px auto;
 }
-.third-left {
-	width: 240px;
+.newnotice {
+	width: 250px;
+	width: 100%;
 	height: 270px;
 	float: left;
 	margin-right: 10px;
