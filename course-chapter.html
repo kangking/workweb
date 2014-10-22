@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html ng-app="">
+<head>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" type="image/x-icon" href="./images/logo.png">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+	<script src="http://cdn.bootcss.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<script src="js/script.js"></script>
+	<title>课程章节！</title>
+</head>
+<body>
+	<div ng-include="'topnav.html'"></div>
+	<section class="haohua-main">
+		<aside class="sidebar sidebar-else">
+			<div>
+				<div ng-include="'userlogin.html'"></div>
+			</div>
+			<div ng-include="'member-center.html'"></div>
+			<div class="sidebar-else">
+				<div ng-include="'newest-notice.html'"></div>
+			</div>
+			<div class="sidebar-else" ng-include="'customer-service.html'"></div>
+		</aside>
+		<section class="info-main">
+			<div class="info-title">
+				<img src="images/q.png">课程章节
+			</div>
+			<div class="info-body">
+			<div class="chapterbody">
+				<div class="panel panel-success">
+					<div class="panel-heading">2014年-邮电业营改增政策解析-所有章节</div>
+					<table class="table table-bordered" id="alink">
+						<tr>
+							<td>第一节<a href=""><img src="images/xuexi.jpg"></a></td>
+							<td>第二节<a href=""><img src="images/xuexi.jpg"></a></td>
+							<td>第三节<a href=""><img src="images/xuexi.jpg"></a></td>
+						</tr>
+						<tr>
+							<td>第四节<a href=""><img src="images/xuexi.jpg"></a></td>
+							<td>第五节<a href=""><img src="images/xuexi.jpg"></a></td>
+							<td>第六节<a href=""><img src="images/xuexi.jpg"></a></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			</div>			
+		</section>
+	</section>
+
+	<div ng-include="'footer.html'"></div>
+
+	<script src="http://apps.bdimg.com/libs/angular.js/1.2.15/angular.min.js"></script>
+	<style type="text/css">
+		.table td {
+			text-align: center;
+		}
+		.table a img {
+			margin-left: 10px;
+		}
+	</style>
+	<script>
+		var as = document.getElementById('alink').getElementsByTagName('a');
+		for (var i = 0 ; i <= as.length; i++) {
+			as[i].onclick = function () {
+				window.open('video-play.html','newwindow','location=no,width=1000,height=750,top=30,left=50');
+			}
+		}
+	</script>
+</body>
+</html>
