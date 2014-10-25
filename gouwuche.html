@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html ng-app="">
+<head>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" type="image/x-icon" href="./images/logo.png">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link rel="stylesheet" type="text/css" href="./css/gouwuche.css">
+	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+	<script src="http://cdn.bootcss.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/gouwuche.js"></script>
+	<title>我的购物车！</title>
+</head>
+<body>
+	<div ng-include="'topnav.html'"></div>
+	<section class="haohua-main">
+		<aside class="sidebar">
+			<div ng-include="'member-center.html'"></div>
+			<div class="sidebar-else">
+				<div ng-include="'newest-notice.html'"></div>
+			</div>
+			<div class="sidebar-else" ng-include="'customer-service.html'"></div>
+		</aside>
+		<section class="info-main">
+			<div class="info-title">
+				<img src="images/q.png">我的购物车
+			</div>
+			<div class="info-body">
+				<table id="carttable">
+					<thead>
+						<tr>
+							<th><label><input class="check-all check" type="checkbox"/>&nbsp;全选</label></th>
+							<th>商品</th>
+							<th>单价</th>
+							<th>数量</th>
+							<th>小计</th>
+							<th>操作</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="goodscheckbox"><input class="check-one check" type="checkbox"/></td>
+							<td class="goods"><img src="images/1.jpg"><span>2014年石家庄市直继续教育学习卡</span></td>
+							<td class="price">20.00</td>
+							<td class="count">
+								<span class="reduce"></span>
+								<input type="text" value="1">
+								<span class="add">+</span>
+							</td>
+							<td class="subtotal">20.00</td>
+							<td class="operation"><span class="delete">删除</span></td>
+						</tr>
+						<tr>
+							<td class="goodscheckbox"><input class="check-one check" type="checkbox"/></td>
+							<td class="goods"><img src="images/2.jpg"><span>2013年石家庄市直继续教育学习卡</span></td>
+							<td class="price">20.00</td>
+							<td class="count">
+								<span class="reduce"></span>
+								<input type="text" value="1">
+								<span class="add">+</span>
+							</td>
+							<td class="subtotal">20.00</td>
+							<td class="operation"><span class="delete">删除</span></td>
+						</tr>
+						<tr>
+							<td class="goodscheckbox"><input class="check-one check" type="checkbox"/></td>
+							<td class="goods"><img src="images/3.jpg"><span>2012年石家庄市直继续教育学习卡</span></td>
+							<td class="price">20.00</td>
+							<td class="count">
+								<span class="reduce"></span>
+								<input type="text" value="1"/>
+								<span class="add">+</span>
+							</td>
+							<td class="subtotal">20.00</td>
+							<td class="operation"><span class="delete">删除</span></td>
+						</tr>
+						<tr>
+							<td class="goodscheckbox"><input class="check-one check" type="checkbox"/></td>
+							<td class="goods"><img src="images/111.jpg"><span>2011年石家庄市直继续教育学习卡</span></td>
+							<td class="price">20.00</td>
+							<td class="count">
+								<span class="reduce"></span>
+								<input type="text" value="1"/>
+								<span class="add">+</span>
+							</td>
+							<td class="subtotal">20.00</td>
+							<td class="operation"><span class="delete">删除</span></td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="foot" id="foot">
+					<label class="fl select-all"><input type="checkbox" class="check-all check"/>&nbsp;全选</label>
+					<a class="fl delete" id="deleteAll" href="javascript:;">删除</a>
+					<div class="fr closing">结 算</div>
+					<div class="fr total">合计：￥<span id="priceTotal">0.00</span></div>
+					<div class="fr selected" id="selected">已选商品
+						<span id="selectedTotal">0</span>件
+						<span class="arrow up">︽</span>
+						<span class="arrow down">︾</span>
+					</div>
+					<div class="selected-view">
+						<div id="selectedViewList" class="clearfix">
+							<!-- <div><img src="images/1.jpg"><span>取消选择</span></div> -->
+						</div>
+						<span class="arrow">◆<span>◆</span></span>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	<div ng-include="'footer.html'"></div>
+
+	<script src="http://apps.bdimg.com/libs/angular.js/1.2.15/angular.min.js"></script>
+
+</body>
+</html>
